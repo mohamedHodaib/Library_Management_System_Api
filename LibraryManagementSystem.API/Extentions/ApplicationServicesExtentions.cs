@@ -1,0 +1,72 @@
+﻿using LibraryBookManagementSystem.API.Middlewares.ExceptionHandlers;
+using LibraryManagementSystem.API.ExceptionHandlers;
+using LibraryManagementSystem.API.Filters.ActionFilters;
+using LibraryManagementSystem.Business.Contract;
+using LibraryManagementSystem.Business.Options;
+using LibraryManagementSystem.Business.Services;
+using LibraryManagementSystem.DataAccess.Contract;
+using LibraryManagementSystem.DataAccess.Entities.People;
+using LibraryManagementSystem.DataAccess.UnitOfWork;
+using Microsoft.AspNetCore.Identity;
+
+namespace LibraryManagementSystem.API.Extensions
+{
+    public static class ApplicationServicesExtensions
+    {
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services, WebApplicationBuilder builder)
+        {
+            // Register Business Layer Injections & Services
+            services.AddScoped<LogPerformanceFilterAttribute>();
+            services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            //Register Api Layer Injections 
+            services.AddScoped<IPersonService, PersonService>();
+            services.AddScoped<IAuthorService, AuthorService>();
+            services.AddScoped<IBorrowerService, BorrowerService>();
+            services.AddScoped<IBookService, BookService>();
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<UserManager<User>>();
+            services.AddScoped<SignInManager<User>>();
+            
+            //Register Exception Handlers
+            services.AddExceptionHandler<BadRequestExceptionHandler>();
+            services.AddExceptionHandler<NotFoundExceptionHandler>();
+            services.AddExceptionHandler<ConflictExceptionHandler>();
+            services.AddExceptionHandler<UnauthorizedExceptionHandler>();
+            services.AddExceptionHandler<DefaultExceptionHandler>();
+
+            //register problem details service
+            services.AddProblemDetails(options =>
+            {
+                options.CustomizeProblemDetails = (context) =>
+                {
+                    // Add trace ID to all problem details responses
+                    context.ProblemDetails.Extensions["traceId"] = context.HttpContext.TraceIdentifier;
+
+                    // Add timestamp
+                    context.ProblemDetails.Extensions["timestamp"] = DateTimeOffset.UtcNow;
+
+                    // Customize based on e@nvironment
+                    if (!builder.Environment.IsDevelopment())
+                    {
+                        // In production, you might want to hide certain details
+                        // Remove stack traces, etc.
+                        context.ProblemDetails.Extensions.Remove("exception");
+                    }
+                };
+            });
+
+            // Register AutoMapper
+            services.AddAutoMapper(typeof(BookService));
+
+            // Bind Settings from appsettings.json
+            services.Configure<LoanSettings>(builder.Configuration.GetSection(LoanSettings.SectionName));
+            services.Configure<ForgotPasswordSettings>(builder.Configuration.GetSection(ForgotPasswordSettings.SectionName));
+            services.Configure<EmailSettings>(builder.Configuration.GetSection(EmailSettings.SectionName));
+
+            return services;
+        }
+    }
+}

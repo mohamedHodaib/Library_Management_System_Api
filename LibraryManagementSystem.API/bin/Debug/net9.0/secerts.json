@@ -1,0 +1,19 @@
+{
+  "ConnectionStrings": {
+    "ConnectionString": "Server = DESKTOP-939VPUP\\MOHAMEDHODAIB;Database = LibraryBookManagementSystem;Integrated Security = True;TrustServerCertificate = True"
+
+  },
+  "Admin": {
+    "Email": "Admin45@gmail.com",
+    "Password": "Amo@#$%57"
+  },
+  "EmailSettings": {
+    "FromEmail": "noreply@LibraryManagementSystem.com",
+    //UserName and Password to log in to email server
+    "Username": "LibraryManagementSystem",
+    "Password": "LMS*$@#234"
+  },
+  "Jwt": {
+    "Key": "JFP2/I4cymhdaGgcEZ8gDsa1mvpGT15zfJTkMrkfRZzg5sK6f9vSqckqEdj2lmeuwJNXLz1Cd87fqG8sot8L7w=="
+  }
+}

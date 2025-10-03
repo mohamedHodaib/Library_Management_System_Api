@@ -1,0 +1,14 @@
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\bin\Debug\net9.0\LibraryManagementSystem.DataAccess.deps.json
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\bin\Debug\net9.0\LibraryManagementSystem.DataAccess.runtimeconfig.json
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\bin\Debug\net9.0\LibraryManagementSystem.DataAccess.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\bin\Debug\net9.0\LibraryManagementSystem.DataAccess.pdb
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\LibraryManagementSystem.DataAccess.csproj.AssemblyReference.cache
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\LibraryManagementSystem.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\LibraryManagementSystem.DataAccess.AssemblyInfoInputs.cache
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\LibraryManagementSystem.DataAccess.AssemblyInfo.cs
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\LibraryManagementSystem.DataAccess.csproj.CoreCompileInputs.cache
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\LibraryManagementSystem.DataAccess.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\refint\LibraryManagementSystem.DataAccess.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\LibraryManagementSystem.DataAccess.pdb
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\LibraryManagementSystem.DataAccess.genruntimeconfig.cache
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.DataAccess\obj\Debug\net9.0\ref\LibraryManagementSystem.DataAccess.dll

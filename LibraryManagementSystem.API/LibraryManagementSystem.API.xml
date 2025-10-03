@@ -1,0 +1,599 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibraryManagementSystem.API</name>
+    </assembly>
+    <members>
+        <member name="T:LibraryManagementSystem.API.Controllers.AuthenticationController">
+            <summary>
+            Manages user accounts, including registration and authentication.
+            </summary>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthenticationController.Register(LibraryManagementSystem.Business.Dtos.AccountDtos.RegisterDto)">
+            <summary>
+            Registers a new user in the system.
+            </summary>
+            <param name="registerDto">The data required to register a new user.</param>
+            <returns>A 201 Created status code if registration is successful.</returns>
+            <response code="201">Indicates the user was created successfully.</response>
+            <response code="400">If the registration data is invalid (e.g., duplicate email, password does not meet requirements).</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthenticationController.Login(LibraryManagementSystem.Business.Dtos.AccountDtos.LoginDto)">
+            <summary>
+            Authenticates a user and provides access and refresh tokens.
+            </summary>
+            <param name="loginDto">The user's login credentials.</param>
+            <returns>An object containing the JWT access token and refresh token.</returns>
+            <response code="200">Returns the access and refresh tokens.</response>
+            <response code="401">If the credentials are incorrect.</response>
+            <response code="400">If the Login data are not valid form.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthenticationController.Logout(LibraryManagementSystem.Business.Dtos.AccountDtos.LogoutDto)">
+            <summary>
+            Authenticates a user and provides access and refresh tokens.
+            </summary>
+            <param name="logoutDto">The user's refresh token.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the user is logged out successfully.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="400">If the refresh token is incorrect.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthenticationController.Refresh(LibraryManagementSystem.Business.Dtos.AccountDtos.TokenDto)">
+            <summary>
+            Refreshes an expired access token using a valid refresh token.
+            </summary>
+            <param name="tokenDto">An object containing the expired access token and the valid refresh token.</param>
+            <returns>A new set of access and refresh tokens.</returns>
+            <response code="200">Returns a new set of tokens.</response>
+            <response code="400">If the provided tokens are invalid or the refresh token has expired.</response>
+        </member>
+        <member name="T:LibraryManagementSystem.API.Controllers.AuthorsController">
+            <summary>
+            API endpoints for managing authors.
+            </summary>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthorsController.GetById(System.Int32)">
+            <summary>
+            Gets a specific author by their unique ID.
+            </summary>
+            <param name="id" example="1">The unique identifier of the author.</param>
+            <returns>The requested author.</returns>
+            <response code="200">Returns the requested author.</response>
+            <response code="404">If an author with the specified ID is not found.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthorsController.GetAll(LibraryManagementSystem.Business.Dtos.Shared.PaginationParameters)">
+            <summary>
+            Gets a paginated list of all authors.
+            </summary>
+            <param name="pagination">The parameters for pagination (page number and page size).</param>
+            <returns>A paginated list of authors.</returns>
+            <response code="200">Returns the paginated list of authors with pagination metadata in the response headers.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthorsController.GetByIds(LibraryManagementSystem.Business.Dtos.Shared.GetByIdsDto)">
+            <summary>
+            Retrieves a collection of authors by their IDs.
+            </summary>
+            <remarks>
+            This endpoint uses a POST request to avoid long URLs when fetching many authors.
+            </remarks>
+            <param name="getByIdsDto">A list of author IDs to retrieve.</param>
+            <returns>A list of authors matching the provided IDs.</returns>
+            <response code="200">Returns a list of the requested authors.</response>
+            <response code="400">If the request body is null or invalid.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthorsController.SearchAuthorsByName(LibraryManagementSystem.Business.Dtos.Shared.SearchParameters)">
+            <summary>
+            Searches for authors by name (paginated).
+            </summary>
+            <param name="searchParameters">The search term and pagination parameters.</param>
+            <returns>A paginated list of authors that match the search term.</returns>
+            <response code="200">Returns a paginated list of matching authors.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthorsController.GetAuthorStatistics(System.Int32)">
+            <summary>
+            Gets statistics for a specific author.
+            </summary>
+            <param name="id" example="1">The unique identifier of the author.</param>
+            <returns>Statistics for the author (e.g., number of books).</returns>
+            <response code="200">Returns the author's statistics.</response>
+            <response code="404">If the author is not found.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthorsController.Create(LibraryManagementSystem.Business.Dtos.AuthorDtos.CreateAuthorDto)">
+            <summary>
+            Creates a new author. (Admin role required)
+            </summary>
+            <param name="dto">The data for the new author.</param>
+            <returns>The newly created author.</returns>
+            <response code="201">Returns the newly created author and a location header pointing to it.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthorsController.CreateCollection(LibraryManagementSystem.Business.Dtos.Shared.CreateCollectionDto{LibraryManagementSystem.Business.Dtos.AuthorDtos.CreateAuthorDto})">
+            <summary>
+            Creates a collection of authors. (Admin role required)
+            </summary>
+            <param name="createCollectionDto">A list of authors to create.</param>
+            <returns>The details of the created authors.</returns>
+            <response code="201">Returns the collection of created authors.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthorsController.Update(System.Int32,LibraryManagementSystem.Business.Dtos.AuthorDtos.UpdateAuthorDto)">
+            <summary>
+            Updates an existing author. (Admin role required)
+            </summary>
+            <param name="id" example="1">The ID of the author to update.</param>
+            <param name="dto">The updated data for the author.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the author was updated successfully.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="404">If the author is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthorsController.Delete(System.Int32)">
+            <summary>
+            Deletes an author. (Admin role required)
+            </summary>
+            <param name="id" example="1">The ID of the author to delete.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the author was deleted successfully.</response>
+            <response code="404">If the author is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="T:LibraryManagementSystem.API.Controllers.BooksController">
+            <summary>
+            API endpoints for managing books in the library.
+            </summary>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.GetById(System.Int32)">
+            <summary>
+            Gets a specific book by its unique ID.
+            </summary>
+            <param name="id" example="1">The unique identifier of the book.</param>
+            <returns>The requested book.</returns>
+            <response code="200">Returns the requested book.</response>
+            <response code="404">If a book with the specified ID is not found.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.GetAll(LibraryManagementSystem.Business.Dtos.Shared.PaginationParameters)">
+            <summary>
+            Gets a paginated list of all books.
+            </summary>
+            <param name="pagination">The parameters for pagination (page number and page size).</param>
+            <returns>A paginated list of books.</returns>
+            <response code="200">Returns the paginated list of books with pagination metadata in the response headers.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.GetByIds(LibraryManagementSystem.Business.Dtos.Shared.GetByIdsDto)">
+            <summary>
+            Retrieves a collection of books by their IDs.
+            </summary>
+            <remarks>
+            This endpoint uses a POST request to avoid long URLs when fetching many books.
+            </remarks>
+            <param name="getByIdsDto">A list of book IDs to retrieve.</param>
+            <returns>A list of books matching the provided IDs.</returns>
+            <response code="200">Returns a list of the requested books.</response>
+            <response code="400">If the request body is null or invalid.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.GetByIsbn(System.String)">
+            <summary>
+            Gets a book by its International Standard Book Number (ISBN).
+            </summary>
+            <param name="isbn" example="978-0321765723">The ISBN of the book.</param>
+            <returns>The requested book.</returns>
+            <response code="200">Returns the requested book.</response>
+            <response code="404">If a book with the specified ISBN is not found.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.GetBooksByAuthorIdAsync(System.Int32)">
+            <summary>
+            Gets all books written by a specific author.
+            </summary>
+            <param name="authorId" example="1">The unique ID of the author.</param>
+            <returns>A list of books by the specified author.</returns>
+            <response code="200">Returns a list of books.</response>
+            <response code="404">If the author ID does not exist.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.GetAvailableBooksAsync">
+            <summary>
+            Gets a list of all available books (not currently borrowed).
+            </summary>
+            <returns>A list of available books.</returns>
+            <response code="200">Returns a list of available books.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.SearchBooksByNameOrTitleAsync(LibraryManagementSystem.Business.Dtos.Shared.SearchParameters)">
+            <summary>
+            Searches for books by author name or title (paginated).
+            </summary>
+            <param name="searchParameters">The search term and pagination parameters.</param>
+            <returns>A paginated list of books that match the search term.</returns>
+            <response code="200">Returns a paginated list of matching books.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.Create(LibraryManagementSystem.Business.Dtos.BookDtos.CreateBookDto)">
+            <summary>
+            Creates a new book. (Admin role required)
+            </summary>
+            <param name="createBookDto">The data for the new book.</param>
+            <returns>The newly created book.</returns>
+            <response code="201">Returns the newly created book and a location header pointing to it.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.CreateCollection(LibraryManagementSystem.Business.Dtos.Shared.CreateCollectionDto{LibraryManagementSystem.Business.Dtos.BookDtos.CreateBookDto})">
+            <summary>
+            Creates a collection of books. (Admin role required)
+            </summary>
+            <param name="createCollectionDto">A list of books to create.</param>
+            <returns>The details of the created books.</returns>
+            <response code="201">Returns the collection of created books.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.Update(System.Int32,LibraryManagementSystem.Business.Dtos.BookDtos.UpdateBookDto)">
+            <summary>
+            Updates an existing book. (Admin role required)
+            </summary>
+            <param name="id" example="1">The ID of the book to update.</param>
+            <param name="updateBookDto">The updated data for the book.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the book was updated successfully.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="404">If the book is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.Patch(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{LibraryManagementSystem.Business.Dtos.BookDtos.UpdateBookDto})">
+            <summary>
+            Partially updates a book using a JSON Patch document. (Admin role required)
+            </summary>
+            <remarks>
+            A JSON Patch document allows for atomic updates to a resource.
+            Example: [ { "op": "replace", "path": "/title", "value": "New Title" } ]
+            </remarks>
+            <param name="id" example="1">The ID of the book to patch.</param>
+            <param name="patchDoc">The JSON Patch document with update operations.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the book was patched successfully.</response>
+            <response code="400">If the patch document is invalid or the resulting model fails validation.</response>
+            <response code="404">If the book is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.AddAuthorToBookAsync(System.Int32,System.Int32)">
+            <summary>
+            Assigns an author to a book. (Admin role required)
+            </summary>
+            <param name="bookId" example="1">The ID of the book.</param>
+            <param name="authorId" example="1">The ID of the author to assign.</param>
+            <returns>A success message.</returns>
+            <response code="200">If the author was added successfully.</response>
+            <response code="404">If the book or author is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.Delete(System.Int32)">
+            <summary>
+            Deletes a book. (Admin role required)
+            </summary>
+            <param name="id" example="1">The ID of the book to delete.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the book was deleted successfully.</response>
+            <response code="404">If the book is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.BorrowBookAsync(System.Int32)">
+            <summary>
+            Borrows a book for the authenticated user. (Admin or Borrower role required)
+            </summary>
+            <param name="bookId" example="1">The ID of the book to borrow.</param>
+            <returns>A success message.</returns>
+            <response code="400">If the book is not available to be borrowed.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user is not an Admin or Borrower.</response>
+            <response code="404">If the book is not found.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BooksController.ReturnBookAsync(System.Int32)">
+            <summary>
+            Returns a borrowed book. (Admin or Borrower role required)
+            </summary>
+            <param name="bookId" example="1">The ID of the book to return.</param>
+            <returns>A success message.</returns>
+            <response code="200">If the book was returned successfully.</response>
+            <response code="400">If the book was not currently borrowed.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user is not an Admin or Borrower.</response>
+            <response code="404">If the book is not found.</response>
+        </member>
+        <member name="T:LibraryManagementSystem.API.Controllers.BorrowersController">
+            <summary>
+            API endpoints for managing library borrowers. All endpoints require Admin privileges.
+            </summary>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.GetById(System.Int32)">
+            <summary>
+            Gets a specific borrower by their unique ID.
+            </summary>
+            <param name="id" example="1">The unique identifier of the borrower.</param>
+            <returns>The requested borrower.</returns>
+            <response code="200">Returns the requested borrower.</response>
+            <response code="404">If a borrower with the specified ID is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.GetAll(LibraryManagementSystem.Business.Dtos.Shared.PaginationParameters)">
+            <summary>
+            Gets a paginated list of all borrowers.
+            </summary>
+            <param name="pagination">The parameters for pagination (page number and page size).</param>
+            <returns>A paginated list of borrowers.</returns>
+            <response code="200">Returns the list of borrowers for the current page, with pagination metadata in the 'X-Pagination' header.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.GetByIds(LibraryManagementSystem.Business.Dtos.Shared.GetByIdsDto)">
+            <summary>
+            Retrieves a collection of borrowers by their IDs.
+            </summary>
+            <remarks>
+            This endpoint uses a POST request to avoid long URLs when fetching many borrowers.
+            </remarks>
+            <param name="getByIdsDto">A list of borrower IDs to retrieve.</param>
+            <returns>A list of borrowers matching the provided IDs.</returns>
+            <response code="200">Returns a list of the requested borrowers.</response>
+            <response code="400">If the request body is null or invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.GetBorrowingHistory(System.Int32)">
+            <summary>
+            Gets the complete borrowing history for a specific borrower.
+            </summary>
+            <param name="id" example="1">The unique identifier of the borrower.</param>
+            <returns>The borrower's full loan history.</returns>
+            <response code="200">Returns the borrowing history.</response>
+            <response code="404">If the borrower is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.GetCurrentLoans(System.Int32)">
+            <summary>
+            Gets a list of books currently on loan to a specific borrower.
+            </summary>
+            <param name="id" example="1">The unique identifier of the borrower.</param>
+            <returns>A list of the borrower's current loans.</returns>
+            <response code="200">Returns the list of current loans.</response>
+            <response code="404">If the borrower is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.GetOverdueLoans(System.Int32)">
+            <summary>
+            Gets a list of overdue books for a specific borrower.
+            </summary>
+            <param name="id" example="1">The unique identifier of the borrower.</param>
+            <returns>A list of overdue books.</returns>
+            <response code="200">Returns the list of overdue loans.</response>
+            <response code="404">If the borrower is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.SearchBorrowersByName(LibraryManagementSystem.Business.Dtos.Shared.SearchParameters)">
+            <summary>
+            Searches for borrowers by name (paginated).
+            </summary>
+            <param name="searchParameters">The search term and pagination parameters.</param>
+            <returns>A paginated list of borrowers that match the search term.</returns>
+            <response code="200">Returns a paginated list of matching borrowers.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.Create(LibraryManagementSystem.Business.Dtos.BorrowerDtos.CreateBorrowerDto)">
+            <summary>
+            Creates a new borrower profile.
+            </summary>
+            <param name="dto">The data for the new borrower.</param>
+            <returns>The newly created borrower profile.</returns>
+            <response code="201">Returns the newly created borrower and a location header pointing to it.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.CreateCollection(LibraryManagementSystem.Business.Dtos.Shared.CreateCollectionDto{LibraryManagementSystem.Business.Dtos.BorrowerDtos.CreateBorrowerDto})">
+            <summary>
+            Creates a collection of borrowers.
+            </summary>
+            <param name="createCollectionDto">A list of borrowers to create.</param>
+            <returns>The details of the created borrowers.</returns>
+            <response code="201">Returns the collection of created borrowers.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.BorrowersController.Delete(System.Int32)">
+            <summary>
+            Deletes a borrower profile.
+            </summary>
+            <param name="id" example="1">The ID of the borrower to delete.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the borrower was deleted successfully.</response>
+            <response code="404">If the borrower is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="T:LibraryManagementSystem.API.Controllers.PersonsController">
+            <summary>
+            API endpoints for managing generic person profiles. All endpoints require Admin privileges.
+            </summary>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.PersonsController.GetById(System.Int32)">
+            <summary>
+            Gets a specific person by their unique ID.
+            </summary>
+            <param name="id" example="1">The unique identifier of the person.</param>
+            <returns>The requested person.</returns>
+            <response code="200">Returns the requested person.</response>
+            <response code="404">If a person with the specified ID is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.PersonsController.GetAll(LibraryManagementSystem.Business.Dtos.Shared.PaginationParameters)">
+            <summary>
+            Gets a paginated list of all persons.
+            </summary>
+            <param name="pagination">The parameters for pagination (page number and page size).</param>
+            <returns>A paginated list of persons.</returns>
+            <response code="200">Returns the list of persons for the current page, with pagination metadata in the 'X-Pagination' header.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.PersonsController.GetByIds(LibraryManagementSystem.Business.Dtos.Shared.GetByIdsDto)">
+            <summary>
+            Retrieves a collection of persons by their IDs.
+            </summary>
+            <remarks>
+            This endpoint uses a POST request to avoid long URLs when fetching many persons.
+            </remarks>
+            <param name="getByIdsDto">A list of person IDs to retrieve.</param>
+            <returns>A list of persons matching the provided IDs.</returns>
+            <response code="200">Returns a list of the requested persons.</response>
+            <response code="400">If the request body is null or invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.PersonsController.Create(LibraryManagementSystem.Business.Dtos.PersonDtos.CreatePersonDto)">
+            <summary>
+            Creates a new person profile.
+            </summary>
+            <param name="dto">The data for the new person.</param>
+            <returns>The newly created person profile.</returns>
+            <response code="201">Returns the newly created person and a location header pointing to it.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.PersonsController.CreateCollection(LibraryManagementSystem.Business.Dtos.Shared.CreateCollectionDto{LibraryManagementSystem.Business.Dtos.PersonDtos.CreatePersonDto})">
+            <summary>
+            Creates a collection of persons.
+            </summary>
+            <param name="createCollectionDto">A list of persons to create.</param>
+            <returns>The details of the created persons.</returns>
+            <response code="201">Returns the collection of created persons.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.PersonsController.Update(System.Int32,LibraryManagementSystem.Business.Dtos.PersonDtos.UpdatePersonDto)">
+            <summary>
+            Updates an existing person's profile.
+            </summary>
+            <param name="id" example="1">The ID of the person to update.</param>
+            <param name="dto">The updated data for the person.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the person was updated successfully.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="404">If the person is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.PersonsController.Delete(System.Int32)">
+            <summary>
+            Deletes a person's profile.
+            </summary>
+            <param name="id" example="1">The ID of the person to delete.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the person was deleted successfully.</response>
+            <response code="404">If the person is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="T:LibraryManagementSystem.API.Controllers.UsersController">
+            <summary>
+            API endpoints for managing user accounts. All endpoints require Admin privileges.
+            </summary>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.UsersController.GetById(System.String)">
+            <summary>
+            Gets a specific user's profile by their unique ID.
+            </summary>
+            <param name="id" example="8e445865-a24d-4543-a6c6-9443d048cdb9">The unique identifier (GUID) of the user.</param>
+            <returns>The requested user's profile.</returns>
+            <response code="200">Returns the requested user's profile.</response>
+            <response code="404">If a user with the specified ID is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.UsersController.GetAll(LibraryManagementSystem.Business.Dtos.Shared.PaginationParameters)">
+            <summary>
+            Gets a paginated list of all users.
+            </summary>
+            <param name="pagination">The parameters for pagination (page number and page size).</param>
+            <returns>A paginated list of users.</returns>
+            <response code="200">Returns the paginated list of users.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.UsersController.Create(LibraryManagementSystem.Business.Dtos.UserDtos.CreateUserByAdminDto)">
+            <summary>
+            Creates a new user.
+            </summary>
+            <param name="dto">The data for the new user, including username, email, password, and roles.</param>
+            <returns>A success message.</returns>
+            <response code="200">Returns a success message if the user was created.</response>
+            <response code="400">If the provided data is invalid (e.g., duplicate username, password too weak).</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.UsersController.Update(System.String,LibraryManagementSystem.Business.Dtos.UserDtos.UpdateUserProfileDto)">
+            <summary>
+            Updates an existing user's profile.
+            </summary>
+            <param name="id" example="8e445865-a24d-4543-a6c6-9443d048cdb9">The ID of the user to update.</param>
+            <param name="dto">The updated data for the user's profile.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the user profile was updated successfully.</response>
+            <response code="400">If the provided data is invalid.</response>
+            <response code="404">If the user is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.UsersController.Delete(System.String)">
+            <summary>
+            Deletes a user.
+            </summary>
+            <param name="id" example="8e445865-a24d-4543-a6c6-9443d048cdb9">The ID of the user to delete.</param>
+            <returns>No content.</returns>
+            <response code="204">Indicates the user was deleted successfully.</response>
+            <response code="400">If the deletion fails (e.g., cannot delete the last admin).</response>
+            <response code="404">If the user is not found.</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.UsersController.AssignRole(LibraryManagementSystem.Business.Dtos.UserDtos.AssignRoleDto)">
+            <summary>
+            Assigns one or more roles to a user.
+            </summary>
+            <param name="assignRoleDto">The user ID and a list of roles to assign.</param>
+            <returns>A success message.</returns>
+            <response code="200">Returns a success message if the roles were assigned.</response>
+            <response code="400">If the operation fails (e.g., user or role not found).</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.UsersController.RemoveRole(LibraryManagementSystem.Business.Dtos.UserDtos.AssignRoleDto)">
+            <summary>
+            Removes one or more roles from a user.
+            </summary>
+            <param name="assignRoleDto">The user ID and a list of roles to remove.</param>
+            <returns>A success message.</returns>
+            <response code="200">Returns a success message if the roles were removed.</response>
+            <response code="400">If the operation fails (e.g., user or role not found).</response>
+            <response code="401">If the user is not authenticated.</response>
+            <response code="403">If the user does not have the 'Admin' role.</response>
+        </member>
+    </members>
+</doc>

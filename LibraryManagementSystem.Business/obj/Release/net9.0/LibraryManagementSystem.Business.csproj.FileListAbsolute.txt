@@ -1,0 +1,15 @@
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\bin\Release\net9.0\LibraryManagementSystem.Business.deps.json
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\bin\Release\net9.0\LibraryManagementSystem.Business.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\bin\Release\net9.0\LibraryManagementSystem.Business.pdb
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\bin\Release\net9.0\LibraryManagementSystem.DataAccess.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\bin\Release\net9.0\LibraryManagementSystem.DataAccess.pdb
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\LibraryManagementSystem.Business.csproj.AssemblyReference.cache
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\LibraryManagementSystem.Business.GeneratedMSBuildEditorConfig.editorconfig
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\LibraryManagementSystem.Business.AssemblyInfoInputs.cache
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\LibraryManagementSystem.Business.AssemblyInfo.cs
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\LibraryManagementSystem.Business.csproj.CoreCompileInputs.cache
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\LibraryM.C4B13E53.Up2Date
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\LibraryManagementSystem.Business.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\refint\LibraryManagementSystem.Business.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\LibraryManagementSystem.Business.pdb
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Release\net9.0\ref\LibraryManagementSystem.Business.dll

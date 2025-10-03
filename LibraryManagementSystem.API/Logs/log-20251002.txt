@@ -1,0 +1,362 @@
+2025-10-02 12:13:56.668 +03:00 [INF] Starting database seeding.
+2025-10-02 12:13:56.913 +03:00 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-02 12:13:58.375 +03:00 [INF] Executed DbCommand (90ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-02 12:13:58.412 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-02 12:13:58.550 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-02 12:13:58.566 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-02 12:13:58.569 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-02 12:13:58.574 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-02 12:13:58.580 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-02 12:13:58.585 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-02 12:13:58.593 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-02 12:13:58.610 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-02 12:13:58.763 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-02 12:13:58.781 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-02 12:13:58.853 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (DbType = Int32), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = DateTime2), @p16='?' (Size = 4000), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [IsRefreshTokenRevoked], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PersonId], [PhoneNumber], [PhoneNumberConfirmed], [RefreshToken], [RefreshTokenExpiryTime], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2025-10-02 12:13:58.877 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-10-02 12:13:58.922 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2025-10-02 12:13:58.930 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-10-02 12:13:58.956 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-02 12:13:58.969 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-02 12:13:59.004 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p20='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p21='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = DateTime2), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [IsRefreshTokenRevoked] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [NormalizedEmail] = @p9, [NormalizedUserName] = @p10, [PasswordHash] = @p11, [PersonId] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [RefreshToken] = @p15, [RefreshTokenExpiryTime] = @p16, [SecurityStamp] = @p17, [TwoFactorEnabled] = @p18, [UserName] = @p19
+OUTPUT 1
+WHERE [Id] = @p20 AND [ConcurrencyStamp] = @p21;
+2025-10-02 12:13:59.032 +03:00 [INF] Database seeding finished successfully.
+2025-10-02 12:13:59.680 +03:00 [INF] Now listening on: https://localhost:7266
+2025-10-02 12:13:59.681 +03:00 [INF] Now listening on: http://localhost:5132
+2025-10-02 12:13:59.782 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-02 12:13:59.784 +03:00 [INF] Hosting environment: Development
+2025-10-02 12:13:59.786 +03:00 [INF] Content root path: F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API
+2025-10-02 12:15:22.062 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5132/api/Accounts/Login - application/json 73
+2025-10-02 12:15:22.136 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5132/api/Accounts/Login - 307 0 null 82.7977ms
+2025-10-02 12:15:22.206 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7266/api/Accounts/Login - application/json 73
+2025-10-02 12:15:23.319 +03:00 [INF] Checking for conditional GET/HEAD.
+2025-10-02 12:15:23.321 +03:00 [INF] Not valid - method isn't GET or HEAD.
+2025-10-02 12:15:23.323 +03:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2025-10-02 12:15:23.327 +03:00 [INF] Checking for conditional PUT/PATCH.
+2025-10-02 12:15:23.329 +03:00 [INF] Not valid - method isn't PUT or PATCH.
+2025-10-02 12:15:23.332 +03:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2025-10-02 12:15:23.336 +03:00 [INF] Incomming Request: POST /api/Accounts/Login
+2025-10-02 12:15:23.338 +03:00 [INF] Outgoing Response: {Status Code}
+2025-10-02 12:15:23.342 +03:00 [INF] Generating expiration headers.
+2025-10-02 12:15:23.345 +03:00 [INF] Expiration headers generated. Expires: Thu, 02 Oct 2025 09:16:23 GMT. Cache-Control: public,max-age=60,must-revalidate.
+2025-10-02 12:15:23.349 +03:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2025-10-02 12:15:23.350 +03:00 [INF] Generating Vary header.
+2025-10-02 12:15:23.352 +03:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2025-10-02 12:15:23.391 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7266/api/Accounts/Login - 404 null application/problem+json 1185.4367ms
+2025-10-02 12:15:23.399 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7266/api/Accounts/Login, Response status code: 404
+2025-10-02 12:15:51.811 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5132/api/Authentication/Login - application/json 73
+2025-10-02 12:15:51.848 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5132/api/Authentication/Login - 307 0 null 37.2671ms
+2025-10-02 12:15:51.858 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7266/api/Authentication/Login - application/json 73
+2025-10-02 12:15:51.867 +03:00 [INF] Checking for conditional GET/HEAD.
+2025-10-02 12:15:51.868 +03:00 [INF] Not valid - method isn't GET or HEAD.
+2025-10-02 12:15:51.869 +03:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2025-10-02 12:15:51.872 +03:00 [INF] Checking for conditional PUT/PATCH.
+2025-10-02 12:15:51.875 +03:00 [INF] Not valid - method isn't PUT or PATCH.
+2025-10-02 12:15:51.876 +03:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2025-10-02 12:15:51.877 +03:00 [INF] Incomming Request: POST /api/Authentication/Login
+2025-10-02 12:15:51.882 +03:00 [INF] Executing endpoint 'LibraryManagementSystem.API.Controllers.AuthenticationController.Login (LibraryManagementSystem.API)'
+2025-10-02 12:15:51.910 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LibraryManagementSystem.Business.Dtos.AccountDtos.LoginDto) on controller LibraryManagementSystem.API.Controllers.AuthenticationController (LibraryManagementSystem.API).
+2025-10-02 12:15:52.092 +03:00 [INF] Executing an action Login on controller Authentication.
+2025-10-02 12:15:52.137 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-02 12:15:52.317 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-10-02 12:15:52.411 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-02 12:15:52.421 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-02 12:15:52.431 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [IsRefreshTokenRevoked] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PersonId] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiryTime] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2025-10-02 12:15:52.459 +03:00 [INF] Executing OkObjectResult, writing value of type 'LibraryManagementSystem.Business.Dtos.AccountDtos.TokenDto'.
+2025-10-02 12:15:52.468 +03:00 [INF] Executed action LibraryManagementSystem.API.Controllers.AuthenticationController.Login (LibraryManagementSystem.API) in 549.8864ms
+2025-10-02 12:15:52.473 +03:00 [INF] Executed endpoint 'LibraryManagementSystem.API.Controllers.AuthenticationController.Login (LibraryManagementSystem.API)'
+2025-10-02 12:15:52.475 +03:00 [INF] Outgoing Response: {Status Code}
+2025-10-02 12:15:52.476 +03:00 [INF] Generating expiration headers.
+2025-10-02 12:15:52.477 +03:00 [INF] Expiration headers generated. Expires: Thu, 02 Oct 2025 09:16:52 GMT. Cache-Control: public,max-age=60,must-revalidate.
+2025-10-02 12:15:52.479 +03:00 [INF] Generating Validation headers.
+2025-10-02 12:15:52.493 +03:00 [INF] Validation headers generated. ETag: Strong, "9496E45310FCF78DB09AD89B002689CB". Last-Modified: Thu, 02 Oct 2025 09:15:52 GMT
+2025-10-02 12:15:52.496 +03:00 [INF] Generating Vary header.
+2025-10-02 12:15:52.497 +03:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2025-10-02 12:15:52.508 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7266/api/Authentication/Login - 200 null application/json; charset=utf-8 649.6613ms
+2025-10-02 12:16:48.706 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5132/api/Authentication/Logout - application/json 73
+2025-10-02 12:16:48.713 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5132/api/Authentication/Logout - 307 0 null 9.7703ms
+2025-10-02 12:16:48.721 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7266/api/Authentication/Logout - application/json 73
+2025-10-02 12:16:48.736 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-02 12:16:48.747 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-02 12:16:48.751 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7266/api/Authentication/Logout - 401 0 null 31.6002ms
+2025-10-02 12:19:22.503 +03:00 [INF] Starting database seeding.
+2025-10-02 12:19:23.014 +03:00 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-02 12:19:24.279 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-02 12:19:24.342 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-02 12:19:24.349 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-02 12:19:24.364 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-02 12:19:24.399 +03:00 [INF] Database seeding finished successfully.
+2025-10-02 12:19:24.689 +03:00 [INF] Now listening on: https://localhost:7266
+2025-10-02 12:19:24.692 +03:00 [INF] Now listening on: http://localhost:5132
+2025-10-02 12:19:24.806 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-02 12:19:24.808 +03:00 [INF] Hosting environment: Development
+2025-10-02 12:19:24.810 +03:00 [INF] Content root path: F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API
+2025-10-02 12:20:00.959 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5132/api/Authentication/Login - application/json 72
+2025-10-02 12:20:01.026 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5132/api/Authentication/Login - 307 0 null 73.1345ms
+2025-10-02 12:20:01.069 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7266/api/Authentication/Login - application/json 72
+2025-10-02 12:20:01.160 +03:00 [INF] Checking for conditional GET/HEAD.
+2025-10-02 12:20:01.162 +03:00 [INF] Not valid - method isn't GET or HEAD.
+2025-10-02 12:20:01.164 +03:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2025-10-02 12:20:01.167 +03:00 [INF] Checking for conditional PUT/PATCH.
+2025-10-02 12:20:01.168 +03:00 [INF] Not valid - method isn't PUT or PATCH.
+2025-10-02 12:20:01.170 +03:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2025-10-02 12:20:01.175 +03:00 [INF] Incomming Request: POST /api/Authentication/Login
+2025-10-02 12:20:01.179 +03:00 [INF] Executing endpoint 'LibraryManagementSystem.API.Controllers.AuthenticationController.Login (LibraryManagementSystem.API)'
+2025-10-02 12:20:01.199 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LibraryManagementSystem.Business.Dtos.AccountDtos.LoginDto) on controller LibraryManagementSystem.API.Controllers.AuthenticationController (LibraryManagementSystem.API).
+2025-10-02 12:20:01.361 +03:00 [INF] Executing an action Login on controller Authentication.
+2025-10-02 12:20:01.415 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-02 12:20:01.569 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-10-02 12:20:01.615 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-02 12:20:01.628 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-02 12:20:01.727 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [IsRefreshTokenRevoked] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PersonId] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiryTime] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2025-10-02 12:20:01.758 +03:00 [INF] Executing OkObjectResult, writing value of type 'LibraryManagementSystem.Business.Dtos.AccountDtos.TokenDto'.
+2025-10-02 12:20:01.770 +03:00 [INF] Executed action LibraryManagementSystem.API.Controllers.AuthenticationController.Login (LibraryManagementSystem.API) in 561.9705ms
+2025-10-02 12:20:01.774 +03:00 [INF] Executed endpoint 'LibraryManagementSystem.API.Controllers.AuthenticationController.Login (LibraryManagementSystem.API)'
+2025-10-02 12:20:01.779 +03:00 [INF] Outgoing Response: {Status Code}
+2025-10-02 12:20:01.785 +03:00 [INF] Generating expiration headers.
+2025-10-02 12:20:01.787 +03:00 [INF] Expiration headers generated. Expires: Thu, 02 Oct 2025 09:21:01 GMT. Cache-Control: public,max-age=60,must-revalidate.
+2025-10-02 12:20:01.789 +03:00 [INF] Generating Validation headers.
+2025-10-02 12:20:01.803 +03:00 [INF] Validation headers generated. ETag: Strong, "AFEFA9A89DB322CD4CE0384C2CA078C5". Last-Modified: Thu, 02 Oct 2025 09:20:01 GMT
+2025-10-02 12:20:01.807 +03:00 [INF] Generating Vary header.
+2025-10-02 12:20:01.810 +03:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2025-10-02 12:20:01.821 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7266/api/Authentication/Login - 200 null application/json; charset=utf-8 751.5349ms
+2025-10-02 12:21:07.987 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5132/api/Authentication/Logout - application/json 73
+2025-10-02 12:21:07.996 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5132/api/Authentication/Logout - 307 0 null 9.287ms
+2025-10-02 12:21:08.001 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7266/api/Authentication/Logout - application/json 73
+2025-10-02 12:21:08.089 +03:00 [INF] Checking for conditional GET/HEAD.
+2025-10-02 12:21:08.106 +03:00 [INF] Not valid - method isn't GET or HEAD.
+2025-10-02 12:21:08.108 +03:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2025-10-02 12:21:08.111 +03:00 [INF] Checking for conditional PUT/PATCH.
+2025-10-02 12:21:08.115 +03:00 [INF] Not valid - no If Match or If Unmodified-Since headers.
+2025-10-02 12:21:08.118 +03:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2025-10-02 12:21:08.123 +03:00 [INF] Incomming Request: PUT /api/Authentication/Logout
+2025-10-02 12:21:08.130 +03:00 [INF] Executing endpoint 'LibraryManagementSystem.API.Controllers.AuthenticationController.Logout (LibraryManagementSystem.API)'
+2025-10-02 12:21:08.139 +03:00 [INF] Route matched with {action = "Logout", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout(LibraryManagementSystem.Business.Dtos.AccountDtos.LogoutDto) on controller LibraryManagementSystem.API.Controllers.AuthenticationController (LibraryManagementSystem.API).
+2025-10-02 12:21:08.163 +03:00 [INF] Executing an action Logout on controller Authentication.
+2025-10-02 12:21:08.199 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__token_0='?' (Size = 4000), @__id_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[RefreshToken] = @__token_0 AND [a].[Id] = @__id_1
+2025-10-02 12:21:08.209 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-02 12:21:08.219 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-02 12:21:08.237 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [IsRefreshTokenRevoked] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PersonId] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiryTime] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2025-10-02 12:21:08.251 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-02 12:21:08.254 +03:00 [INF] Executed action LibraryManagementSystem.API.Controllers.AuthenticationController.Logout (LibraryManagementSystem.API) in 100.7114ms
+2025-10-02 12:21:08.256 +03:00 [INF] Executed endpoint 'LibraryManagementSystem.API.Controllers.AuthenticationController.Logout (LibraryManagementSystem.API)'
+2025-10-02 12:21:08.258 +03:00 [INF] Outgoing Response: {Status Code}
+2025-10-02 12:21:08.259 +03:00 [INF] Generating expiration headers.
+2025-10-02 12:21:08.262 +03:00 [INF] Expiration headers generated. Expires: Thu, 02 Oct 2025 09:22:08 GMT. Cache-Control: public,max-age=60,must-revalidate.
+2025-10-02 12:21:08.265 +03:00 [INF] Generating Validation headers.
+2025-10-02 12:21:08.271 +03:00 [INF] Validation headers generated. ETag: Strong, "EB683E59EB3E0C63C1C37EB959D7E46E". Last-Modified: Thu, 02 Oct 2025 09:21:08 GMT
+2025-10-02 12:21:08.272 +03:00 [INF] Generating Vary header.
+2025-10-02 12:21:08.273 +03:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2025-10-02 12:21:08.275 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7266/api/Authentication/Logout - 204 null null 274.4975ms
+2025-10-02 12:21:54.749 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5132/api/Token/Refresh - application/json 505
+2025-10-02 12:21:54.765 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5132/api/Token/Refresh - 307 0 null 15.9903ms
+2025-10-02 12:21:54.804 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7266/api/Token/Refresh - application/json 505
+2025-10-02 12:21:54.816 +03:00 [INF] Checking for conditional GET/HEAD.
+2025-10-02 12:21:54.817 +03:00 [INF] Not valid - method isn't GET or HEAD.
+2025-10-02 12:21:54.818 +03:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2025-10-02 12:21:54.820 +03:00 [INF] Checking for conditional PUT/PATCH.
+2025-10-02 12:21:54.821 +03:00 [INF] Not valid - method isn't PUT or PATCH.
+2025-10-02 12:21:54.823 +03:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2025-10-02 12:21:54.824 +03:00 [INF] Incomming Request: POST /api/Token/Refresh
+2025-10-02 12:21:54.826 +03:00 [INF] Outgoing Response: {Status Code}
+2025-10-02 12:21:54.830 +03:00 [INF] Generating expiration headers.
+2025-10-02 12:21:54.832 +03:00 [INF] Expiration headers generated. Expires: Thu, 02 Oct 2025 09:22:54 GMT. Cache-Control: public,max-age=60,must-revalidate.
+2025-10-02 12:21:54.833 +03:00 [INF] Not generating Validation headers as the response status code does not indicate success.
+2025-10-02 12:21:54.834 +03:00 [INF] Generating Vary header.
+2025-10-02 12:21:54.835 +03:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2025-10-02 12:21:54.864 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7266/api/Token/Refresh - 404 null application/problem+json 63.6102ms
+2025-10-02 12:21:54.870 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7266/api/Token/Refresh, Response status code: 404
+2025-10-02 12:22:06.642 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5132/api/Authentication/Refresh - application/json 505
+2025-10-02 12:22:06.647 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5132/api/Authentication/Refresh - 307 0 null 4.3194ms
+2025-10-02 12:22:06.649 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7266/api/Authentication/Refresh - application/json 505
+2025-10-02 12:22:06.655 +03:00 [INF] Checking for conditional GET/HEAD.
+2025-10-02 12:22:06.657 +03:00 [INF] Not valid - method isn't GET or HEAD.
+2025-10-02 12:22:06.659 +03:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2025-10-02 12:22:06.662 +03:00 [INF] Checking for conditional PUT/PATCH.
+2025-10-02 12:22:06.663 +03:00 [INF] Not valid - method isn't PUT or PATCH.
+2025-10-02 12:22:06.665 +03:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2025-10-02 12:22:06.666 +03:00 [INF] Incomming Request: POST /api/Authentication/Refresh
+2025-10-02 12:22:06.667 +03:00 [INF] Executing endpoint 'LibraryManagementSystem.API.Controllers.AuthenticationController.Refresh (LibraryManagementSystem.API)'
+2025-10-02 12:22:06.674 +03:00 [INF] Route matched with {action = "Refresh", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refresh(LibraryManagementSystem.Business.Dtos.AccountDtos.TokenDto) on controller LibraryManagementSystem.API.Controllers.AuthenticationController (LibraryManagementSystem.API).
+2025-10-02 12:22:06.694 +03:00 [INF] Executing an action Refresh on controller Authentication.
+2025-10-02 12:22:06.744 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-10-02 12:22:17.868 +03:00 [INF] Executed action LibraryManagementSystem.API.Controllers.AuthenticationController.Refresh (LibraryManagementSystem.API) in 11187.3152ms
+2025-10-02 12:22:17.873 +03:00 [INF] Executed endpoint 'LibraryManagementSystem.API.Controllers.AuthenticationController.Refresh (LibraryManagementSystem.API)'
+2025-10-02 12:22:19.693 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+LibraryManagementSystem.Business.Exceptions.UnauthorizedException: Invalid,expired or revoked refresh token.
+   at LibraryManagementSystem.Business.Services.AuthenticationService.RefreshToken(TokenDto tokenDto) in F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\Services\AuthenticationService.cs:line 195
+   at LibraryManagementSystem.API.Controllers.AuthenticationController.Refresh(TokenDto tokenDto) in F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\Controllers\AuthenticationController.cs:line 116
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at LibraryBookManagementSystem.API.Middlewares.RequestLoggingHandler.Invoke(HttpContext context) in F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\Middlewares\RequestLoggingHandler.cs:line 24
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-10-02 12:22:19.776 +03:00 [ERR] Un authorized exception has occured : Invalid,expired or revoked refresh token.
+LibraryManagementSystem.Business.Exceptions.UnauthorizedException: Invalid,expired or revoked refresh token.
+   at LibraryManagementSystem.Business.Services.AuthenticationService.RefreshToken(TokenDto tokenDto) in F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\Services\AuthenticationService.cs:line 195
+   at LibraryManagementSystem.API.Controllers.AuthenticationController.Refresh(TokenDto tokenDto) in F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\Controllers\AuthenticationController.cs:line 116
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at LibraryBookManagementSystem.API.Middlewares.RequestLoggingHandler.Invoke(HttpContext context) in F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\Middlewares\RequestLoggingHandler.cs:line 24
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-10-02 12:22:19.818 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7266/api/Authentication/Refresh - 401 null application/problem+json 13169.194ms
