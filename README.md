@@ -1,6 +1,6 @@
 # Library Management System API
 
-Welcome to the **Library Management System API**! This project provides a backend API for managing library operations, such as books, members, and transactions. Built using **C#**, this API is designed to be efficient, scalable, and easy to integrate with frontend applications.
+Welcome to the **Library Management System API**! This project provides a backend API for managing library operations, such as books, authors,borrowers,borrowing, and users. Built using **ASP.NET Core Web api**, this API is designed to be efficient, scalable, and easy to integrate with frontend applications.
 
 ## Features
 
