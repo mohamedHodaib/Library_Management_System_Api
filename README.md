@@ -85,7 +85,7 @@ Before running the project, ensure you have:
    ```json
    {
      "ConnectionStrings": {
-       "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=LibraryDB;Trusted_Connection=true"
+       "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=LibraryDB;Trusted_Connection=true"
      }
    }
    ```
@@ -93,7 +93,7 @@ Before running the project, ensure you have:
 3. **Set up user secrets** (for sensitive data)
    ```bash
    dotnet user-secrets init
-   dotnet user-secrets set "Jwt:Secret" "your-super-secret-key-here"
+   dotnet user-secrets set "Jwt:Key" "your-super-secret-key-here"
    ```
 
 4. **Apply database migrations**
@@ -119,8 +119,8 @@ Before running the project, ensure you have:
    ```
 
 3. **Access the API**
-   - API Base URL: `https://localhost:5001`
-   - Swagger UI: `https://localhost:5001/swagger`
+   - API Base URL: `https://localhost:5132`
+   - Swagger UI: `https://localhost:5132/swagger`
 
 ### Quick Test
 
@@ -142,47 +142,97 @@ curl -X POST https://localhost:5001/api/auth/login \
 
 ## 📚 API Documentation
 
-### Authentication Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/auth/register` | Register new user |
-| POST | `/api/auth/login` | Login and receive JWT token |
-| POST | `/api/auth/refresh` | Refresh access token |
-| POST | `/api/auth/logout` | Revoke token and logout |
-| POST | `/api/auth/forgot-password` | Request password reset |
-| POST | `/api/auth/reset-password` | Reset user password |
-
-### Book Endpoints
+## Authentication Endpoints
 
 | Method | Endpoint | Description | Auth Required |
 |--------|----------|-------------|---------------|
-| GET | `/api/books` | Get all books (paginated) | ✅ |
-| GET | `/api/books/{id}` | Get book by ID | ✅ |
+| POST | `/api/authentication` | Register new user | ❌ |
+| POST | `/api/authentication/Login` | Login and get JWT tokens | ❌ |
+| PUT | `/api/authentication/Logout` | Logout and revoke refresh token | ✅ Any |
+| POST | `/api/authentication/Refresh` | Refresh access token | ❌ |
+
+---
+
+## Book Endpoints
+
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| GET | `/api/books` | Get all books (paginated) | ❌ |
+| GET | `/api/books/{id}` | Get book by ID | ❌ |
+| GET | `/api/books/isbn/{isbn}` | Get book by ISBN | ❌ |
+| GET | `/api/books/by-author/{authorId}` | Get books by author | ❌ |
+| GET | `/api/books/available` | Get available books | ❌ |
+| GET | `/api/books/Search` | Search books by title/author | ❌ |
+| POST | `/api/books/GetByIds` | Get multiple books by IDs | ❌ |
 | POST | `/api/books` | Create new book | ✅ Admin |
+| POST | `/api/books/Collection` | Create multiple books | ✅ Admin |
 | PUT | `/api/books/{id}` | Update book | ✅ Admin |
+| PATCH | `/api/books/{id}` | Partially update book | ✅ Admin |
+| POST | `/api/books/{bookId}/Authors/{authorId}` | Add author to book | ✅ Admin |
 | DELETE | `/api/books/{id}` | Delete book | ✅ Admin |
-| POST | `/api/books/{id}/borrow` | Borrow a book | ✅ |
-| POST | `/api/books/{id}/return` | Return a book | ✅ |
+| POST | `/api/books/{bookId}/Borrow` | Borrow a book | ✅ Borrower |
+| PUT | `/api/books/{bookId}/Return` | Return a book | ✅ Borrower |
 
-### Author Endpoints
+---
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/authors` | Get all authors |
-| GET | `/api/authors/{id}` | Get author details |
-| GET | `/api/authors/{id}/statistics` | Get author statistics |
-| POST | `/api/authors` | Create author (Admin) |
-| PUT | `/api/authors/{id}` | Update author (Admin) |
-| DELETE | `/api/authors/{id}` | Delete author (Admin) |
+## Author Endpoints
 
-### Borrower Endpoints
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| GET | `/api/authors` | Get all authors (paginated) | ❌ |
+| GET | `/api/authors/{id}` | Get author by ID | ❌ |
+| GET | `/api/authors/{id}/Stats` | Get author statistics | ❌ |
+| GET | `/api/authors/Search` | Search authors by name | ❌ |
+| POST | `/api/authors/GetByIds` | Get multiple authors by IDs | ❌ |
+| POST | `/api/authors` | Create new author | ✅ Admin |
+| POST | `/api/authors/Collection` | Create multiple authors | ✅ Admin |
+| PUT | `/api/authors/{id}` | Update author | ✅ Admin |
+| DELETE | `/api/authors/{id}` | Delete author | ✅ Admin |
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/borrowers/loans` | Get current loans |
-| GET | `/api/borrowers/overdue` | Get overdue loans |
-| GET | `/api/borrowers/history` | Get borrowing history |
+---
+
+## Borrower Endpoints
+
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| GET | `/api/borrowers` | Get all borrowers (paginated) | ✅ Admin |
+| GET | `/api/borrowers/{id}` | Get borrower by ID | ✅ Admin |
+| GET | `/api/borrowers/{id}/BorrowingHistory` | Get borrowing history | ✅ Admin |
+| GET | `/api/borrowers/{id}/Loans/Current` | Get current loans | ✅ Admin |
+| GET | `/api/borrowers/{id}/Loans/Overdue` | Get overdue loans | ✅ Admin |
+| GET | `/api/borrowers/Search` | Search borrowers by name | ✅ Admin |
+| POST | `/api/borrowers/GetByIds` | Get multiple borrowers by IDs | ✅ Admin |
+| POST | `/api/borrowers` | Create new borrower | ✅ Admin |
+| POST | `/api/borrowers/Collection` | Create multiple borrowers | ✅ Admin |
+| DELETE | `/api/borrowers/{id}` | Delete borrower | ✅ Admin |
+
+---
+
+## User Management Endpoints
+
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| GET | `/api/users` | Get all users (paginated) | ✅ Admin |
+| GET | `/api/users/{id}` | Get user by ID | ✅ Admin |
+| POST | `/api/users` | Create new user | ✅ Admin |
+| PUT | `/api/users/{id}` | Update user profile | ✅ Admin |
+| DELETE | `/api/users/{id}` | Delete user | ✅ Admin |
+| POST | `/api/users/Roles/Assign` | Assign roles to user | ✅ Admin |
+| POST | `/api/users/Roles/Remove` | Remove roles from user | ✅ Admin |
+
+---
+
+## Person Endpoints
+
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| GET | `/api/persons` | Get all persons (paginated) | ✅ Admin |
+| GET | `/api/persons/{id}` | Get person by ID | ✅ Admin |
+| POST | `/api/persons/GetByIds` | Get multiple persons by IDs | ✅ Admin |
+| POST | `/api/persons` | Create new person | ✅ Admin |
+| POST | `/api/persons/Collection` | Create multiple persons | ✅ Admin |
+| PUT | `/api/persons/{id}` | Update person | ✅ Admin |
+| DELETE | `/api/persons/{id}` | Delete person | ✅ Admin |
 
 > 📖 **Full Documentation**: Visit `/swagger` endpoint when running the API for interactive documentation
 
@@ -191,23 +241,147 @@ curl -X POST https://localhost:5001/api/auth/login \
 ## 🏗️ Project Structure
 
 ```
-Library_Management_System_Api/
-├── API/                          # Web API layer
-│   ├── Controllers/              # API endpoints
-│   ├── Middleware/               # Custom middleware
-│   └── Program.cs               # Application entry point
-├── Core/                         # Domain layer
-│   ├── Entities/                # Domain entities
-│   ├── Interfaces/              # Repository interfaces
-│   └── DTOs/                    # Data transfer objects
-├── Infrastructure/               # Data access layer
-│   ├── Data/                    # DbContext and configurations
-│   ├── Repositories/            # Repository implementations
-│   └── Identity/                # Identity configuration
-└── Services/                     # Business logic layer
-    ├── BookService.cs
-    ├── AuthorService.cs
-    └── AuthService.cs
+LibraryManagementSystem/ (Solution - 3 projects)
+│
+├── LibraryManagementSystem.API/           # Web API Layer (Presentation)
+│   ├── Controllers/                       # API endpoints
+│   │   ├── AuthenticationController.cs    # Auth endpoints
+│   │   ├── AuthorsController.cs           # Author management
+│   │   ├── BooksController.cs             # Book management
+│   │   ├── BorrowersController.cs         # Borrower management
+│   │   ├── PersonsController.cs           # Person management
+│   │   └── UsersController.cs             # User management
+│   │
+│   ├── Constants/                         # Application constants
+│   │   └── Constants.cs                   # Role names, etc.
+│   │
+│   ├── ExceptionHandlers/                 # Global exception handling
+│   │   ├── BadRequestExceptionHandler.cs
+│   │   ├── ConflictExceptionHandler.cs
+│   │   ├── DefaultExceptionHandler.cs
+│   │   ├── NotFoundException.cs
+│   │   └── UnauthorizedExceptionHandler.cs
+│   │
+│   ├── Extensions/                        # Service registration extensions
+│   │   ├── ApiServicesExtensions.cs       # API-specific services
+│   │   ├── ApplicationServicesExtensions.cs
+│   │   ├── DatabaseExtensions.cs          # Database configuration
+│   │   ├── IdentityAndAuthExtensions.cs   # Auth setup
+│   │   ├── LoggingExtensions.cs           # Serilog configuration
+│   │   └── SeedingExtensions.cs           # Data seeding
+│   │
+│   ├── Filters/                           # Action filters
+│   │   ├── ActionFilters/
+│   │   │   └── LogPerformanceFilterAttribute.cs
+│   │   └── ResultFilters/
+│   │       └── HandlePagedDataFilterAttribute.cs
+│   │
+│   ├── Logs/                              # Application logs
+│   │   └── log-*.txt                      # Daily log files
+│   │
+│   ├── Middlewares/                       # Custom middleware
+│   │   └── RequestLoggingHandler.cs       # Request/response logging
+│   │
+│   ├── appsettings.json                   # Configuration
+│   ├── LibraryBookManagementSystemAPI.http # HTTP test file
+│   └── Program.cs                         # Application entry point
+│
+├── LibraryManagementSystem.Business/      # Business Logic Layer
+│   ├── Contract/                          # Service interfaces
+│   │   ├── IAuthenticationService.cs
+│   │   ├── IAuthorService.cs
+│   │   ├── IBookService.cs
+│   │   ├── IBorrowerService.cs
+│   │   ├── IEmailService.cs
+│   │   ├── IPersonService.cs
+│   │   └── IUserService.cs
+│   │
+│   ├── Dtos/                              # Data Transfer Objects
+│   │   ├── AccountDtos/                   # Auth DTOs
+│   │   │   └── AccountDtos.cs
+│   │   ├── AuthorDtos/                    # Author DTOs
+│   │   │   └── AuthorDtos.cs
+│   │   ├── BookDtos/                      # Book DTOs
+│   │   │   └── BookDtos.cs
+│   │   ├── BorrowerDtos/                  # Borrower DTOs
+│   │   │   └── BorrowerDtos.cs
+│   │   ├── BorrowingDtos/                 # Borrowing DTOs
+│   │   │   └── BorrowingDtos.cs
+│   │   ├── PersonDtos/                    # Person DTOs
+│   │   │   └── PersonDtos.cs
+│   │   ├── Shared/                        # Shared DTOs
+│   │   │   └── Shared.cs
+│   │   └── UserDtos/                      # User DTOs
+│   │       └── UserDtos.cs
+│   │
+│   ├── Exceptions/                        # Business exceptions
+│   │   └── BusinessExceptions.cs
+│   │
+│   ├── Mappings/                          # AutoMapper profiles
+│   │   ├── AuthorMappingProfile.cs
+│   │   ├── BookMappingProfile.cs
+│   │   ├── BorrowerMappingProfile.cs
+│   │   ├── PersonMappingProfile.cs
+│   │   └── UserMappingProfile.cs
+│   │
+│   ├── Options/                           # Configuration options
+│   │   ├── EmailSettings.cs
+│   │   ├── ForgotPasswordSettings.cs
+│   │   ├── JwtSettings.cs
+│   │   └── LoanSettings.cs
+│   │
+│   ├── Services/                          # Service implementations
+│   │   ├── AuthenticationService.cs
+│   │   ├── AuthorService.cs
+│   │   ├── BookService.cs
+│   │   ├── BorrowerService.cs
+│   │   ├── EmailService.cs
+│   │   ├── PersonService.cs
+│   │   └── UserService.cs
+│   │
+│   └── Validations/                       # FluentValidation validators
+│       └── ListElementsRangeAttribute.cs
+│
+└── LibraryManagementSystem.DataAccess/    # Data Access Layer
+    ├── Contract/                          # Repository interfaces
+    │   ├── IAuthorRepository.cs
+    │   ├── IBaseEntity.cs
+    │   ├── IBookRepository.cs
+    │   ├── IBorrowerRepository.cs
+    │   ├── IBorrowingRepository.cs
+    │   ├── IPersonRepository.cs
+    │   ├── IRepositoryBase.cs
+    │   ├── ISoftDeletable.cs
+    │   └── IUnitOfWork.cs
+    │
+    ├── Data/                              # EF Core DbContext
+    │   ├── Config/                        # Entity configurations
+    │   │   └── Interceptors/
+    │   ├── AppDbContext.cs                # Main DbContext
+    │   └── AppDbContextFactory.cs         # Design-time factory
+    │
+    ├── Entities/                          # Domain entities
+    │   ├── People/                        # Person-related entities
+    │   ├── Book.cs
+    │   └── Borrowing.cs
+    │
+    ├── Extensions/                        # Data access extensions
+    │   ├── Utility/
+    │   ├── AuthorExtensions.cs
+    │   ├── BookExtensions.cs
+    │   ├── BorrowerExtensions.cs
+    │   └── PersonExtensions.cs
+    │
+    ├── Migrations/                        # EF Core migrations
+    │   ├── 20251002073901_Final.cs
+    │   └── AppDbContextModelSnapshot.cs
+    │
+    └── Repositories/                      # Repository implementations
+        ├── AuthorRepository.cs
+        ├── BookRepository.cs
+        ├── BorrowerRepository.cs
+        ├── BorrowingRepository.cs
+        └── PersonRepository.cs
 ```
 
 ---
@@ -221,10 +395,10 @@ Configure JWT in `appsettings.json`:
 ```json
 {
   "Jwt": {
-    "Issuer": "LibraryAPI",
-    "Audience": "LibraryClients",
-    "ExpiryMinutes": 60,
-    "RefreshTokenExpiryDays": 7
+    "Issuer": "https://localhost:7266",
+    "Audience": "https://localhost:7266",
+    "ExpireMinutes": 30,
+    "RefreshTokenExpireDays": 7
   }
 }
 ```
@@ -234,8 +408,7 @@ Configure JWT in `appsettings.json`:
 ```json
 {
   "CacheSettings": {
-    "DefaultExpirationMinutes": 10,
-    "SlidingExpirationMinutes": 5
+    "ExpirationMinutes": 10
   }
 }
 ```
