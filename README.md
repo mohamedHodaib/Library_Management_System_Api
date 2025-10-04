@@ -419,18 +419,6 @@ The project uses Serilog for structured logging. Logs are written to both consol
 
 ---
 
-## 🧪 Testing
-
-```bash
-# Run all tests
-dotnet test
-
-# Run with coverage
-dotnet test /p:CollectCoverage=true
-```
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how you can help:
@@ -453,7 +441,6 @@ Contributions are welcome! Here's how you can help:
 ### Development Guidelines
 
 - Follow existing code style and conventions
-- Write unit tests for new features
 - Update documentation as needed
 - Keep commits atomic and well-described
 
@@ -470,7 +457,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Mohamed Hodaib**
 
 - GitHub: [@mohamedHodaib](https://github.com/mohamedHodaib)
-- LinkedIn: [Connect with me](https://linkedin.com/in/mohamedhodaib)
+- LinkedIn: [Connect with me](https://www.linkedin.com/in/mohamed-hodaib-2670b2344/)
 
 ---
 
