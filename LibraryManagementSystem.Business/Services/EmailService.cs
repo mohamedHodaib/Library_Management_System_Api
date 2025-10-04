@@ -37,16 +37,18 @@ namespace LibraryManagementSystem.Business.Services
             using var smtp = new SmtpClient();
             try
             {
-                await smtp.ConnectAsync(_emailSettings.SmtpServer
-                    ,_emailSettings.SmtpPort,SecureSocketOptions.StartTls);
+                //simulate sending email when Having server email
 
-                await smtp.AuthenticateAsync(_emailSettings.Username,_emailSettings.Password);
+                //await smtp.ConnectAsync(_emailSettings.SmtpServer
+                //    , _emailSettings.SmtpPort, SecureSocketOptions.StartTls);
 
-                await smtp.SendAsync(email);
+                //await smtp.AuthenticateAsync(_emailSettings.Username, _emailSettings.Password);
+
+                //await smtp.SendAsync(email);
             }
             finally
             {
-                await smtp.DisconnectAsync(true);
+                //await smtp.DisconnectAsync(true);
             }
 
         }

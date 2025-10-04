@@ -45,8 +45,8 @@ namespace LibraryManagementSystem.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            return CreatedAtAction(nameof(UsersController.GetById)
-                                        , new { id = userProfileDto!.Id }, userProfileDto);
+            return CreatedAtAction(nameof(UsersController.GetById),
+                                    "Users" , new { id = userProfileDto!.Id }, userProfileDto);
         }
 
         /// <summary>
@@ -114,5 +114,85 @@ namespace LibraryManagementSystem.API.Controllers
 
             return Ok(tokenDtoToReturn);
         }
+
+        #region Password End Points 
+
+        /// <summary>
+        /// Initiates a password reset by sending a reset link to the user's email.
+        /// </summary>
+        /// <param name="forgotPasswordDto">The email address of the user requesting password reset.</param>
+        /// <returns>No content on successful email dispatch.</returns>
+        /// <response code="204">Password reset email has been sent successfully.</response>
+        /// <response code="400">If the email address is invalid.</response>
+        [HttpPut("ForgotPassword")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordDto forgotPasswordDto)
+        {
+            await _authenticationService.ForgotPasswordAsync(forgotPasswordDto);
+            return NoContent();
+        }
+
+        /// <summary>
+        /// Resets a user's password using a valid reset token.
+        /// </summary>
+        /// <param name="resetPasswordDto">Contains the email, reset token, new password, and password confirmation.</param>
+        /// <returns>No content on successful password reset.</returns>
+        /// <response code="204">Password has been reset successfully.</response>
+        /// <response code="400">If the reset token is invalid, expired, or the new password doesn't meet requirements.</response>
+        [HttpPut("ResetPassword")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto resetPasswordDto)
+        {
+            var identityResult = await _authenticationService.ResetPasswordAsync(resetPasswordDto);
+
+            if (!identityResult.Succeeded)
+            {
+                foreach (var error in identityResult.Errors)
+                {
+                    ModelState.AddModelError(error.Code, error.Description);
+                }
+                return BadRequest(ModelState);
+            }
+
+            return NoContent();
+        }
+
+        /// <summary>
+        /// Changes the authenticated user's password.
+        /// </summary>
+        /// <param name="changePasswordDto">Contains the current password, new password, and password confirmation.</param>
+        /// <returns>No content on successful password change.</returns>
+        /// <response code="204">Password has been changed successfully.</response>
+        /// <response code="400">If the current password is incorrect or the new password doesn't meet requirements.</response>
+        /// <response code="401">If the user is not authenticated.</response>
+        [HttpPut("ChangePassword")]
+        [Authorize]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto changePasswordDto)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (userId == null)
+                return Unauthorized("User ID claim is not provided in the token.");
+
+            var identityResult = await _authenticationService.ChangePasswordAsync(userId, changePasswordDto);
+
+            if (!identityResult.Succeeded)
+            {
+                foreach (var error in identityResult.Errors)
+                {
+                    ModelState.AddModelError(error.Code, error.Description);
+                }
+                return BadRequest(ModelState);
+            }
+
+            return NoContent();
+        }
+
+        #endregion
     }
 }

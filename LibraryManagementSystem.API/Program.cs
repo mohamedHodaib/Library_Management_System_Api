@@ -80,6 +80,8 @@ namespace LibraryManagementSystem.API
                 );
             }
 
+            app.UseRouting();
+
             // 6. Request logging middleware (before auth to log all requests)
             app.UseMiddleware<RequestLoggingHandler>();
 

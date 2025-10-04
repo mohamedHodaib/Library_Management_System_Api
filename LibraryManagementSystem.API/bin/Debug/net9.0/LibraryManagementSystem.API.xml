@@ -47,6 +47,34 @@
             <response code="200">Returns a new set of tokens.</response>
             <response code="400">If the provided tokens are invalid or the refresh token has expired.</response>
         </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthenticationController.ForgotPassword(LibraryManagementSystem.Business.Dtos.AccountDtos.ForgotPasswordDto)">
+            <summary>
+            Initiates a password reset by sending a reset link to the user's email.
+            </summary>
+            <param name="forgotPasswordDto">The email address of the user requesting password reset.</param>
+            <returns>No content on successful email dispatch.</returns>
+            <response code="204">Password reset email has been sent successfully.</response>
+            <response code="400">If the email address is invalid.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthenticationController.ResetPassword(LibraryManagementSystem.Business.Dtos.AccountDtos.ResetPasswordDto)">
+            <summary>
+            Resets a user's password using a valid reset token.
+            </summary>
+            <param name="resetPasswordDto">Contains the email, reset token, new password, and password confirmation.</param>
+            <returns>No content on successful password reset.</returns>
+            <response code="204">Password has been reset successfully.</response>
+            <response code="400">If the reset token is invalid, expired, or the new password doesn't meet requirements.</response>
+        </member>
+        <member name="M:LibraryManagementSystem.API.Controllers.AuthenticationController.ChangePassword(LibraryManagementSystem.Business.Dtos.AccountDtos.ChangePasswordDto)">
+            <summary>
+            Changes the authenticated user's password.
+            </summary>
+            <param name="changePasswordDto">Contains the current password, new password, and password confirmation.</param>
+            <returns>No content on successful password change.</returns>
+            <response code="204">Password has been changed successfully.</response>
+            <response code="400">If the current password is incorrect or the new password doesn't meet requirements.</response>
+            <response code="401">If the user is not authenticated.</response>
+        </member>
         <member name="T:LibraryManagementSystem.API.Controllers.AuthorsController">
             <summary>
             API endpoints for managing authors.
