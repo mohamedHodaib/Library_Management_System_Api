@@ -1,14 +1,47 @@
 # Library Management System API
 
-Welcome to the **Library Management System API**! This project provides a backend API for managing library operations, such as books, authors,borrowers,borrowing, and users. Built using **ASP.NET Core Web api**, this API is designed to be efficient, scalable, and easy to integrate with frontend applications.
+Backend Web API Project for managing Books (borrow, return), authors (get statistics), borrowers (Get Current
+and overdue loans), and Users (Login, Register,ForgetPassword,ChangePassword, and manage using ASP.NET Core Identity). applying
+authentication and authorization using JWT, Entity framework Core, Logging, Caching API Responses , Searching
+And Sorting Responses , DTO, Documentation. also Using AI to optimize my solutions after apply first to get
+more knowledge while making projects.
 
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Configuration](#configuration)
+- [Development](#development)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
+  
 ## Features
-
-- Manage books: Add, update, and delete book records.
-- Manage members: Add, update, and delete library members.
-- Track loans: Keep track of books borrowed and returned.
-- Search functionality to find books and members quickly.
-- Secure authentication and authorization for user roles.
+- ✨ CRUD operations - using Entity Framework core in the DataAcces.
+- 🚀 Searching & Dashboard statistics - get author statistics.
+- 🔒 Pagination & Sorting - apply pagination for enpoints that return many records and optional sorting.
+- 📱 Cashing  - apply cashing for GET endpoints to optimize performance.
+- Logging - using Serilog Library.
+- Automapping - using Automapper library.
+- Filters - Action filters for logging performance of handling requests & Result Filter to add pagination header to the response for meta data of paginated data.
+- Extentions - To make the registeration at IOC container in program.cs more cleaner.
+- Exption Handling - By inherit from IExceptionHandler and using the buil-in UseExceptionHandler middleware to catch the exceptions that occured in the Pipline.
+- Custom MiddleWare - For logging requests.
+- Authentication & Authorization - using JWT(JSON Web Token) for authentication, refresh token to get access token when access token expired and applying role-based authorization to prevent forbidden access
+- DTOs - Shapping the response that returned from the DataAccess.
+- Options Design Pattern - To map settings at appsettings Json.
+- Repository Design Pattern - For handling Database access.
+- Unit Of Work Design Pattern - To Unifiy Repositories that access database under on class, and saving to database at one transaction.
+- Dependeny Injection & Dependency Inversion - To prevent Dependency between objects and classes.
+### Business Logic
+- Book: handle borrowing and returning books.
+- Borrower: Get current and over due loans.
+- Authors: Get Author Statistics.
+- Users & Security: Register,Login,Logout,Assign roles,remove roles,Revoke Refresh Token when Logout, ForgetPassword,and ChangesPassword using ASP.NET Core Identity for managing users.
 
 ## Getting Started
 
