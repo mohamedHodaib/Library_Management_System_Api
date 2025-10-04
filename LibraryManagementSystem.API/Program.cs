@@ -19,7 +19,7 @@ namespace LibraryManagementSystem.API
 
             builder.Services
                 .AddApplicationServices(builder)
-                .AddApiServices()
+                .AddApiServices(builder.Configuration)
                 .AddDatabaseServices(builder.Configuration)
                 .AddIdentityAndAuthentication(builder.Configuration);
 

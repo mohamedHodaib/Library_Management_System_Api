@@ -35,18 +35,18 @@ namespace LibraryManagementSystem.Business.Services
         public AuthenticationService(UserManager<User> userManager
             , SignInManager<User> signInManager
             , IMapper mapper
-            , IOptionsMonitor<ForgotPasswordSettings> forgotPasswordSettingsOptions
             , ILogger<AuthenticationService> logger
             , IEmailService emailService
-            , IOptionsSnapshot<JwtSettings> jwtSettingsOptions)
+            , IOptionsMonitor<ForgotPasswordSettings> forgotPasswordSettingsOptions
+            , IOptionsMonitor<JwtSettings> jwtSettingsOptions)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _mapper = mapper;
-            _forgotPasswordSettings = forgotPasswordSettingsOptions.CurrentValue;
             _logger = logger;
             _emailService = emailService;
-            _jwtSettings = jwtSettingsOptions.Value;
+            _forgotPasswordSettings = forgotPasswordSettingsOptions.CurrentValue;
+            _jwtSettings = jwtSettingsOptions.CurrentValue;
         }
 
         public async Task<(IdentityResult,UserProfileDto?)> RegisterAsync(RegisterDto registerDto)
@@ -170,7 +170,7 @@ namespace LibraryManagementSystem.Business.Services
             _user.RefreshToken = refreshToken;
 
             if (populateExp)
-                _user.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
+                _user.RefreshTokenExpiryTime = DateTime.Now.AddDays(_jwtSettings.RefreshTokenExpireDays);
 
             await _userManager.UpdateAsync(_user);
 

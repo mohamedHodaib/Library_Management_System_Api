@@ -13,3 +13,4 @@ F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Debug\net
 F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Debug\net9.0\refint\LibraryManagementSystem.Business.dll
 F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Debug\net9.0\LibraryManagementSystem.Business.pdb
 F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Debug\net9.0\ref\LibraryManagementSystem.Business.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.Business\obj\Debug\net9.0\LibraryManagementSystem.Business.sourcelink.json

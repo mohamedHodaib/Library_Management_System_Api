@@ -14,5 +14,6 @@ namespace LibraryManagementSystem.Business.Options
         public string Issuer { get; set; } = null!;
         public string Audience { get; set; } = null!;
         public double ExpireMinutes { get; set; }
+        public double RefreshTokenExpireDays { get; set; }
     }
 }

@@ -1,0 +1,112 @@
+2025-10-04 19:09:20.997 +03:00 [INF] Starting database seeding.
+2025-10-04 19:09:22.182 +03:00 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-04 19:09:24.759 +03:00 [INF] Executed DbCommand (102ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-04 19:09:24.825 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-04 19:09:24.830 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-04 19:09:24.843 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-04 19:09:24.878 +03:00 [INF] Database seeding finished successfully.
+2025-10-04 19:09:25.196 +03:00 [INF] Now listening on: https://localhost:7266
+2025-10-04 19:09:25.199 +03:00 [INF] Now listening on: http://localhost:5132
+2025-10-04 19:09:25.307 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-04 19:09:25.310 +03:00 [INF] Hosting environment: Development
+2025-10-04 19:09:25.313 +03:00 [INF] Content root path: F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API
+2025-10-04 19:09:26.795 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5132/api/authors/2 - null null
+2025-10-04 19:09:26.870 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5132/api/authors/2 - 307 0 null 79.6872ms
+2025-10-04 19:09:26.938 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7266/api/authors/2 - null null
+2025-10-04 19:09:26.958 +03:00 [INF] Incomming Request: GET /api/authors/2
+2025-10-04 19:09:26.970 +03:00 [INF] No cached response available for this request.
+2025-10-04 19:09:26.991 +03:00 [INF] Checking for conditional GET/HEAD.
+2025-10-04 19:09:27.001 +03:00 [INF] Not valid - no If-None-Match or If-Modified-Since headers.
+2025-10-04 19:09:27.005 +03:00 [INF] Don't generate 304 - Not Modified.  Continue.
+2025-10-04 19:09:27.009 +03:00 [INF] Checking for conditional PUT/PATCH.
+2025-10-04 19:09:27.010 +03:00 [INF] Not valid - method isn't PUT or PATCH.
+2025-10-04 19:09:27.013 +03:00 [INF] Don't generate 412 - Precondition Failed.  Continue.
+2025-10-04 19:09:28.280 +03:00 [INF] Executing endpoint 'LibraryManagementSystem.API.Controllers.AuthorsController.GetById (LibraryManagementSystem.API)'
+2025-10-04 19:09:28.307 +03:00 [INF] Route matched with {action = "GetById", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller LibraryManagementSystem.API.Controllers.AuthorsController (LibraryManagementSystem.API).
+2025-10-04 19:09:28.457 +03:00 [INF] Executing an action GetById on controller Authors.
+2025-10-04 19:09:28.643 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Biography], [s].[PersonId], [s].[Id0], [s0].[AuthorsId], [s0].[BooksId], [s0].[Id], [s0].[DeleteDate], [s0].[ISBN], [s0].[PublishYear], [s0].[Title], [s].[FirstName], [s].[LastName]
+FROM (
+    SELECT TOP(2) [a].[Id], [a].[Biography], [a].[PersonId], [p].[Id] AS [Id0], [p].[FirstName], [p].[LastName]
+    FROM [Authors] AS [a]
+    INNER JOIN [Persons] AS [p] ON [a].[PersonId] = [p].[Id]
+    WHERE [a].[Id] = @__id_0
+) AS [s]
+LEFT JOIN (
+    SELECT [b].[AuthorsId], [b].[BooksId], [b0].[Id], [b0].[DeleteDate], [b0].[ISBN], [b0].[PublishYear], [b0].[Title]
+    FROM [BookAuthors] AS [b]
+    INNER JOIN [Books] AS [b0] ON [b].[BooksId] = [b0].[Id]
+) AS [s0] ON [s].[Id] = [s0].[AuthorsId]
+ORDER BY [s].[Id], [s].[Id0], [s0].[AuthorsId], [s0].[BooksId]
+2025-10-04 19:09:28.706 +03:00 [INF] Executing OkObjectResult, writing value of type 'LibraryManagementSystem.Business.Dtos.AuthorDtos.AuthorDetailsDto'.
+2025-10-04 19:09:28.723 +03:00 [INF] Executed action LibraryManagementSystem.API.Controllers.AuthorsController.GetById (LibraryManagementSystem.API) in 408.2257ms
+2025-10-04 19:09:28.728 +03:00 [INF] Executed endpoint 'LibraryManagementSystem.API.Controllers.AuthorsController.GetById (LibraryManagementSystem.API)'
+2025-10-04 19:09:28.733 +03:00 [INF] Generating expiration headers.
+2025-10-04 19:09:28.737 +03:00 [INF] Expiration headers generated. Expires: Sat, 04 Oct 2025 16:10:28 GMT. Cache-Control: public,max-age=60.
+2025-10-04 19:09:28.740 +03:00 [INF] Generating Validation headers.
+2025-10-04 19:09:28.751 +03:00 [INF] Validation headers generated. ETag: Strong, "7E01B746B9F8C0C8BC43F75FAC24D0DF". Last-Modified: Sat, 04 Oct 2025 16:09:28 GMT
+2025-10-04 19:09:28.754 +03:00 [INF] Generating Vary header.
+2025-10-04 19:09:28.756 +03:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2025-10-04 19:09:28.765 +03:00 [INF] The response has been cached.
+2025-10-04 19:09:28.769 +03:00 [INF] Outgoing Response: {Status Code}
+2025-10-04 19:09:28.778 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7266/api/authors/2 - 200 null application/json; charset=utf-8 1839.6291ms
+2025-10-04 21:51:13.632 +03:00 [INF] Starting database seeding.
+2025-10-04 21:51:14.071 +03:00 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-04 21:51:17.047 +03:00 [INF] Executed DbCommand (108ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-04 21:51:17.213 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-04 21:51:17.221 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-04 21:51:17.257 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-04 21:51:17.359 +03:00 [INF] Database seeding finished successfully.
+2025-10-04 21:51:17.899 +03:00 [INF] Now listening on: https://localhost:7266
+2025-10-04 21:51:17.902 +03:00 [INF] Now listening on: http://localhost:5132
+2025-10-04 21:51:18.223 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-04 21:51:18.253 +03:00 [INF] Hosting environment: Development
+2025-10-04 21:51:18.258 +03:00 [INF] Content root path: F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API
+2025-10-04 21:52:56.269 +03:00 [INF] Starting database seeding.
+2025-10-04 21:52:56.618 +03:00 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-04 21:52:58.850 +03:00 [INF] Executed DbCommand (63ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-04 21:52:58.945 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-04 21:52:58.965 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-04 21:52:59.057 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-04 21:52:59.186 +03:00 [INF] Database seeding finished successfully.
+2025-10-04 21:52:59.757 +03:00 [INF] Now listening on: https://localhost:7266
+2025-10-04 21:52:59.760 +03:00 [INF] Now listening on: http://localhost:5132
+2025-10-04 21:53:00.195 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-04 21:53:00.201 +03:00 [INF] Hosting environment: Development
+2025-10-04 21:53:00.211 +03:00 [INF] Content root path: F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API

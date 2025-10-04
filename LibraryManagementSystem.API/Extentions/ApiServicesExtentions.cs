@@ -12,7 +12,7 @@ namespace LibraryManagementSystem.API.Extensions
     public static class ApiServicesExtensions
     {
 
-        public static IServiceCollection AddApiServices(this IServiceCollection services)
+        public static IServiceCollection AddApiServices(this IServiceCollection services,IConfiguration configuration)
         {
             NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
             new ServiceCollection()
@@ -116,11 +116,12 @@ namespace LibraryManagementSystem.API.Extensions
 
             //Register the services for caching
             services.AddResponseCaching();
-            // 1. Add the core services for caching
+
+            //  Add the core services for caching
             services.AddHttpCacheHeaders(
                 (expirationOptions) =>
                 {
-                    expirationOptions.MaxAge = 60;
+                    expirationOptions.MaxAge = Convert.ToInt32(configuration["CacheSettings:ExpirationMinutes"]);
                 },
                 (validationOptions) =>
                 {
