@@ -11,7 +11,7 @@ A robust, enterprise-grade RESTful API built with ASP.NET Core for comprehensive
 - 🔐 **Secure Authentication** - JWT-based auth with refresh tokens and role-based access control
 - ⚡ **High Performance** - Response caching, pagination, and optimized database queries
 - 📊 **Analytics Ready** - Real-time statistics and insights for library operations
-- 🏗️ **Clean Architecture** - Repository pattern, Unit of Work, and SOLID principles
+- 🏗️ **Clean Code** - Repository pattern, Unit of Work, and SOLID principles
 - 📝 **Production Ready** - Structured logging, error handling, and monitoring built-in
 
 ---
@@ -33,7 +33,7 @@ A robust, enterprise-grade RESTful API built with ASP.NET Core for comprehensive
   - User profile management
   - Active loan tracking
   - Overdue notification system
-  - Borrowing history and limits
+  - Borrowing history and limits  
 
 ### 🔐 Authentication & Security
 - JWT token-based authentication with refresh token support
@@ -67,7 +67,7 @@ A robust, enterprise-grade RESTful API built with ASP.NET Core for comprehensive
 
 Before running the project, ensure you have:
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) or later
 - SQL Server (LocalDB, Express, or full version)
 - Your favorite IDE ([Visual Studio](https://visualstudio.microsoft.com/), [VS Code](https://code.visualstudio.com/), or [Rider](https://www.jetbrains.com/rider/))
 
