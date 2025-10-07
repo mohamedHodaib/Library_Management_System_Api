@@ -77,7 +77,7 @@ namespace LibraryManagementSystem.API.Controllers
         /// <response code="403">If the user does not have the 'Admin' role.</response>
         [HttpPost]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(IEnumerable<IdentityError>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Create([FromBody] CreateUserByAdminDto dto)
@@ -86,7 +86,11 @@ namespace LibraryManagementSystem.API.Controllers
 
             if (!identityResult.Succeeded)
             {
-                return BadRequest(identityResult.Errors);
+                foreach (var error in identityResult.Errors)
+                {
+                    ModelState.AddModelError(error.Code, error.Description);
+                }
+                return BadRequest(ModelState);
             }
 
             return StatusCode(201, userProfileDto);
@@ -105,17 +109,21 @@ namespace LibraryManagementSystem.API.Controllers
         /// <response code="403">If the user does not have the 'Admin' role.</response>
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(typeof(IEnumerable<IdentityError>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Update(string id, [FromBody] UpdateUserProfileDto dto)
         {
-            var result = await _userService.UpdateUserProfileAsync(id, dto);
+            var identityResult = await _userService.UpdateUserProfileAsync(id, dto);
 
-            if (!result.Succeeded)
+            if (!identityResult.Succeeded)
             {
-                return BadRequest(result.Errors);
+                foreach (var error in identityResult.Errors)
+                {
+                    ModelState.AddModelError(error.Code, error.Description);
+                }
+                return BadRequest(ModelState);
             }
 
             return NoContent();
@@ -133,17 +141,21 @@ namespace LibraryManagementSystem.API.Controllers
         /// <response code="403">If the user does not have the 'Admin' role.</response>
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(typeof(IEnumerable<IdentityError>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> Delete(string id)
         {
-            var result = await _userService.DeleteUserAsync(id);
+            var identityResult = await _userService.DeleteUserAsync(id);
 
-            if (!result.Succeeded)
+            if (!identityResult.Succeeded)
             {
-                return BadRequest(result.Errors);
+                foreach (var error in identityResult.Errors)
+                {
+                    ModelState.AddModelError(error.Code, error.Description);
+                }
+                return BadRequest(ModelState);
             }
 
             return NoContent();
@@ -158,21 +170,25 @@ namespace LibraryManagementSystem.API.Controllers
         /// <response code="400">If the operation fails (e.g., user or role not found).</response>
         /// <response code="401">If the user is not authenticated.</response>
         /// <response code="403">If the user does not have the 'Admin' role.</response>
-        [HttpPost("Roles/Assign")]
+        [HttpPut("Roles/Assign")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(IEnumerable<IdentityError>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> AssignRole([FromBody] AssignRoleDto assignRoleDto)
         {
-            var result = await _userService.AssignRoleAsync(assignRoleDto);
+            var identityResult = await _userService.AssignRoleAsync(assignRoleDto);
 
-            if (!result.Succeeded)
+            if (!identityResult.Succeeded)
             {
-                return BadRequest(result.Errors);
+                foreach (var error in identityResult.Errors)
+                {
+                    ModelState.AddModelError(error.Code, error.Description);
+                }
+                return BadRequest(ModelState);
             }
 
-            return Ok("Role Assigned Successfully.");
+            return NoContent();
         }
 
         /// <summary>
@@ -184,21 +200,26 @@ namespace LibraryManagementSystem.API.Controllers
         /// <response code="400">If the operation fails (e.g., user or role not found).</response>
         /// <response code="401">If the user is not authenticated.</response>
         /// <response code="403">If the user does not have the 'Admin' role.</response>
-        [HttpPost("Roles/Remove")]
+        [HttpPut("Roles/Remove")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(IEnumerable<IdentityError>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public async Task<IActionResult> RemoveRole([FromBody] AssignRoleDto assignRoleDto)
         {
-            var result = await _userService.RemoveRoleFromUserAsync(assignRoleDto);
+            var identityResult = await _userService.RemoveRoleFromUserAsync(assignRoleDto);
 
-            if (!result.Succeeded)
+            if (!identityResult.Succeeded)
             {
-                return BadRequest(result.Errors);
+                foreach (var error in identityResult.Errors)
+                {
+                    ModelState.AddModelError(error.Code, error.Description);
+                }
+                return BadRequest(ModelState);
             }
 
-            return Ok("Role Removed Successfully.");
+
+            return NoContent();
         }
     }
 }

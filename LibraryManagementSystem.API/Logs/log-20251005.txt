@@ -558,3 +558,46 @@ WHERE [a].[UserId] = @__userId_0
 2025-10-05 00:11:53.751 +03:00 [INF] Vary header generated: Accept, Accept-Language, Accept-Encoding.
 2025-10-05 00:11:53.754 +03:00 [INF] Outgoing Response: {Status Code}
 2025-10-05 00:11:53.764 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7266/api/Authentication - 201 null application/json; charset=utf-8 3131.4486ms
+2025-10-05 14:46:23.521 +03:00 [INF] Starting database seeding.
+2025-10-05 14:46:24.221 +03:00 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-05 14:46:26.154 +03:00 [INF] Executed DbCommand (80ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-05 14:46:26.212 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-05 14:46:26.217 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-05 14:46:26.230 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsRefreshTokenRevoked], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonId], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-05 14:46:26.264 +03:00 [INF] Database seeding finished successfully.
+2025-10-05 14:46:26.540 +03:00 [INF] Now listening on: https://localhost:7266
+2025-10-05 14:46:26.543 +03:00 [INF] Now listening on: http://localhost:5132
+2025-10-05 14:46:26.642 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 14:46:26.645 +03:00 [INF] Hosting environment: Development
+2025-10-05 14:46:26.647 +03:00 [INF] Content root path: F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API
+2025-10-05 14:46:27.305 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7266/swagger - null null
+2025-10-05 14:46:27.580 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7266/swagger - 301 0 null 277.3847ms
+2025-10-05 14:46:27.589 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - null null
+2025-10-05 14:46:27.655 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - 200 null text/html;charset=utf-8 66.3551ms
+2025-10-05 14:46:27.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7266/swagger/swagger-ui.css - null null
+2025-10-05 14:46:27.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7266/swagger/swagger-ui-bundle.js - null null
+2025-10-05 14:46:27.672 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-05 14:46:27.679 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - null null
+2025-10-05 14:46:27.672 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7266/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-05 14:46:27.716 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 44.5312ms
+2025-10-05 14:46:27.731 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-05 14:46:27.734 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-05 14:46:27.737 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7266/swagger/swagger-ui.css - 200 152034 text/css 65.7492ms
+2025-10-05 14:46:27.738 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7266/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 66.1252ms
+2025-10-05 14:46:27.767 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-05 14:46:27.769 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7266/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 97.4476ms
+2025-10-05 14:46:27.793 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - 200 null text/javascript; charset=UTF-8 114.5279ms
+2025-10-05 14:46:27.964 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - null null
+2025-10-05 14:46:28.150 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 185.9904ms

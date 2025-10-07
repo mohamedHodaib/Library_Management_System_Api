@@ -3,6 +3,7 @@ using LibraryManagementSystem.Business.Dtos.AccountDtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using static System.Net.WebRequestMethods;
 
 namespace LibraryManagementSystem.API.Controllers
 {
@@ -64,7 +65,12 @@ namespace LibraryManagementSystem.API.Controllers
         {
             var result = await _authenticationService.ValidateAsync(loginDto);
 
-            if (!result) return Unauthorized("Wrong Username or Password.");
+            if (!result)
+                return Problem(
+                        title: "Unauthorized",
+                        statusCode: StatusCodes.Status401Unauthorized,
+                        detail: "Wrong Username or Password."
+                );
 
             var tokenDto = await _authenticationService.GenerateTokens(true);
 
@@ -89,7 +95,11 @@ namespace LibraryManagementSystem.API.Controllers
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
             if (userId == null)
-                Unauthorized("User Id claim is not provided in the token.");
+                return Problem(
+                        title: "Unauthorized",
+                        statusCode: StatusCodes.Status401Unauthorized,
+                        detail: "User Id claim is not provided in the token."
+                );
 
             //If revocation failed ,it doesn't matter because the client code will direct to login page.
             await _authenticationService.RevokeRefreshToken(logoutDto.RefreshToken, userId!);
@@ -177,7 +187,11 @@ namespace LibraryManagementSystem.API.Controllers
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
             if (userId == null)
-                return Unauthorized("User ID claim is not provided in the token.");
+                return Problem(
+                    title: "Unauthorized",
+                    statusCode: StatusCodes.Status401Unauthorized,
+                    detail: "User ID claim is not provided in the token."
+                );
 
             var identityResult = await _authenticationService.ChangePasswordAsync(userId, changePasswordDto);
 

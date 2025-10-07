@@ -354,7 +354,7 @@ namespace LibraryManagementSystem.API.Controllers
             if (userId == null) return Unauthorized("User Id claim is not provided in the token.");
 
             await _bookService.ReturnBookAsync(bookId, userId);
-            return Ok("Book Returned Successfully.");
+            return NoContent();
         }
 
         #endregion

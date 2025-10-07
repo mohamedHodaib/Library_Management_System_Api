@@ -55,6 +55,10 @@ namespace LibraryManagementSystem.API.Extensions
                         // Remove stack traces, etc.
                         context.ProblemDetails.Extensions.Remove("exception");
                     }
+
+                    //add where the error occurred
+                    context.ProblemDetails.Extensions["instance"] = 
+                        $"{context.HttpContext.Request.Method} {context.HttpContext.Request.Path}";
                 };
             });
 
