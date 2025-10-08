@@ -207,3 +207,6 @@ F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\obj\Debug\net9.0\L
 F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\obj\Debug\net9.0\LibraryManagementSystem.API.genruntimeconfig.cache
 F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\obj\Debug\net9.0\ref\LibraryManagementSystem.API.dll
 F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\obj\Debug\net9.0\LibraryManagementSystem.API.sourcelink.json
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\bin\Debug\net9.0\Asp.Versioning.Abstractions.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\bin\Debug\net9.0\Asp.Versioning.Http.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\bin\Debug\net9.0\Asp.Versioning.Mvc.dll

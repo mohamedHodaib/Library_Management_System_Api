@@ -1,4 +1,5 @@
-﻿using LibraryBookManagementSystem.API.Middlewares.ExceptionHandlers;
+﻿using Asp.Versioning;
+using LibraryBookManagementSystem.API.Middlewares.ExceptionHandlers;
 using LibraryManagementSystem.API.ExceptionHandlers;
 using LibraryManagementSystem.API.Filters.ActionFilters;
 using LibraryManagementSystem.Business.Contract;
@@ -69,6 +70,14 @@ namespace LibraryManagementSystem.API.Extensions
             services.Configure<LoanSettings>(builder.Configuration.GetSection(LoanSettings.SectionName));
             services.Configure<ForgotPasswordSettings>(builder.Configuration.GetSection(ForgotPasswordSettings.SectionName));
             services.Configure<EmailSettings>(builder.Configuration.GetSection(EmailSettings.SectionName));
+
+            //Add Versioning Service
+            services.AddApiVersioning(opt =>
+            {
+                opt.ReportApiVersions = true;
+                opt.AssumeDefaultVersionWhenUnspecified = true;
+                opt.DefaultApiVersion = new ApiVersion(1, 0);
+            });
 
             return services;
         }
