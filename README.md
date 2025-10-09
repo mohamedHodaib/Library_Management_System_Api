@@ -9,7 +9,7 @@ A robust, enterprise-grade RESTful API built with ASP.NET Core for comprehensive
 ## ✨ Highlights
 
 - 🔐 **Secure Authentication** - JWT-based auth with refresh tokens and role-based access control
-- ⚡ **High Performance** - Response caching, pagination, and optimized database queries
+- ⚡ **High Performance** - Response caching, pagination,Rate Limiting, and optimized database queries
 - 📊 **Analytics Ready** - Real-time statistics and insights for library operations
 - 🏗️ **Clean Code** - Repository pattern, Unit of Work, and SOLID principles
 - 📝 **Production Ready** - Structured logging, error handling, and monitoring built-in
@@ -48,6 +48,7 @@ A robust, enterprise-grade RESTful API built with ASP.NET Core for comprehensive
 - **Pagination** - Efficient data loading with metadata headers
 - **Search & Filter** - Advanced querying with sorting capabilities
 - **Performance Monitoring** - Request timing tracked via action filters
+- **Rate Limiting** - Limiting access to endpoints when failure for a period
 
 ### 🛠️ Technical Excellence
 - **Three-Tier Architecture** with clear separation of concerns
