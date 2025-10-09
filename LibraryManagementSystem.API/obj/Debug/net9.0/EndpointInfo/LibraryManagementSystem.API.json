@@ -4754,26 +4754,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -4866,26 +4857,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -5107,26 +5089,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -5175,7 +5148,7 @@
       }
     },
     "/api/Users/Roles/Assign": {
-      "post": {
+      "put": {
         "tags": [
           "Users"
         ],
@@ -5231,26 +5204,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -5299,7 +5263,7 @@
       }
     },
     "/api/Users/Roles/Remove": {
-      "post": {
+      "put": {
         "tags": [
           "Users"
         ],
@@ -5355,26 +5319,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/IdentityError"
-                  }
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -5949,20 +5904,6 @@
       },
       "IContractResolver": {
         "type": "object",
-        "additionalProperties": false
-      },
-      "IdentityError": {
-        "type": "object",
-        "properties": {
-          "code": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          }
-        },
         "additionalProperties": false
       },
       "LoginDto": {

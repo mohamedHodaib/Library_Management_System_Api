@@ -1,4 +1,5 @@
 using API.Extensions; // Import the extensions namespace
+using AspNetCoreRateLimit;
 using LibraryBookManagementSystem.API.Middlewares;
 using LibraryManagementSystem.API.Extensions;
 using LibraryManagementSystem.API.Extentions;
@@ -85,7 +86,10 @@ namespace LibraryManagementSystem.API
             // 6. Request logging middleware (before auth to log all requests)
             app.UseMiddleware<RequestLoggingHandler>();
 
-            // 7. CORS
+            //7.Rate Limiting
+            app.UseIpRateLimiting();
+
+            // 8. CORS
             app.UseCors("CorsPolicy");
 
             // 8. Response caching

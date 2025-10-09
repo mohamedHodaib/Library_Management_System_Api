@@ -1,4 +1,5 @@
 ﻿using Asp.Versioning;
+using AspNetCoreRateLimit;
 using LibraryBookManagementSystem.API.Middlewares.ExceptionHandlers;
 using LibraryManagementSystem.API.ExceptionHandlers;
 using LibraryManagementSystem.API.Filters.ActionFilters;
@@ -78,6 +79,32 @@ namespace LibraryManagementSystem.API.Extensions
                 opt.AssumeDefaultVersionWhenUnspecified = true;
                 opt.DefaultApiVersion = new ApiVersion(1, 0);
             });
+
+
+            //Registerations to add Rate Limiting feature 
+            //Add Memory Cache to rate limiting
+            // 1. Add IOptions to read configuration
+            builder.Services.AddOptions();
+
+            // 2. Add in-memory cache to store rate limit counters
+            builder.Services.AddMemoryCache();
+
+            // 3. Bind the IP Rate Limiting options from configuration (e.g., appsettings.json)
+            builder.Services.Configure<IpRateLimitOptions>(builder.Configuration.GetSection("IpRateLimiting"));
+            builder.Services.Configure<IpRateLimitPolicies>(builder.Configuration.GetSection("IpRateLimitPolicies"));
+
+            // 4. Inject the in-memory stores for counters and policies
+            builder.Services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+            builder.Services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+
+            //5. This registers the component that resolves the InvalidOperationException
+            builder.Services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+
+            // 6. Add the core Rate Limit Configuration
+            builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+
+            // OPTIONAL but Recommended: Required for the rate limiter to find the HTTP context
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             return services;
         }

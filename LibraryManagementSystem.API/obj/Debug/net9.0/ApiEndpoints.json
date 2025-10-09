@@ -2483,7 +2483,7 @@
         "StatusCode": 200
       },
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -2597,7 +2597,7 @@
         "StatusCode": 204
       },
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -2658,7 +2658,7 @@
         "StatusCode": 204
       },
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -2702,7 +2702,7 @@
     "ContainingType": "LibraryManagementSystem.API.Controllers.UsersController",
     "Method": "AssignRole",
     "RelativePath": "api/Users/Roles/Assign",
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -2723,7 +2723,7 @@
         "StatusCode": 200
       },
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -2758,7 +2758,7 @@
     "ContainingType": "LibraryManagementSystem.API.Controllers.UsersController",
     "Method": "RemoveRole",
     "RelativePath": "api/Users/Roles/Remove",
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -2779,7 +2779,7 @@
         "StatusCode": 200
       },
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
         "MediaTypes": [
           "text/plain",
           "application/json",

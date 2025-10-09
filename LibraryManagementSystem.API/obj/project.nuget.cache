@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "EN+chzIyK0Q=",
+  "dgSpecHash": "eaESHHGwYn4=",
   "success": true,
   "projectFilePath": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\asp.versioning.mvc\\8.1.0\\asp.versioning.mvc.8.1.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
