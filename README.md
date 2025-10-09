@@ -48,7 +48,7 @@ A robust, enterprise-grade RESTful API built with ASP.NET Core for comprehensive
 - **Pagination** - Efficient data loading with metadata headers
 - **Search & Filter** - Advanced querying with sorting capabilities
 - **Performance Monitoring** - Request timing tracked via action filters
-- **Rate Limiting** - Limiting access to endpoints when failure for a period
+- **Rate Limiting** - A defense mechanism used in network infrastructures and applications (like your API) to control the rate at which a client or user can send requests to a server or API within a specific time window.
 
 ### 🛠️ Technical Excellence
 - **Three-Tier Architecture** with clear separation of concerns
