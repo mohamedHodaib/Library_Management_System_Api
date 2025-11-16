@@ -20,16 +20,33 @@ namespace LibraryBookManagementSystem.API.Middlewares
 
         public async Task Invoke(HttpContext context)
         {
-           _logger.LogInformation("Incomming Request: {Method} {Path}",context.Request.Method,context.Request.Path);
+            var stopwatch = Stopwatch.StartNew();
 
-            var stopWatch = Stopwatch.StartNew();
+            try
+            {
+                _logger.LogInformation("Incomming Request: {Method} {Path}", context.Request.Method, context.Request.Path);
 
-            await _next(context);
 
-            stopWatch.Stop();
+                await _next(context);
 
-            _logger.LogInformation("Outgoing Response: {Status Code}, in Elapsed time {elapsed time}"
-                ,context.Response.StatusCode,stopWatch.ElapsedMilliseconds);
+                stopwatch.Stop();
+
+                _logger.LogInformation("Outgoing Response: {Status Code}, in Elapsed time {elapsed time}"
+                    , context.Response.StatusCode, stopwatch.ElapsedMilliseconds);
+            }
+            catch (Exception ex)
+            {
+                stopwatch.Stop();
+
+                _logger.LogError(
+                    ex,
+                    "Request failed in {ElapsedMs}ms",
+                    stopwatch.ElapsedMilliseconds);
+
+                throw;
+            }
+
+
         }
     }
 }
