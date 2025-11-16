@@ -89,7 +89,7 @@ namespace LibraryManagementSystem.API
             app.UseRouting();
 
             // Request logging middleware (before auth to log all requests)
-            app.UseMiddleware<RequestLoggingHandler>();
+            app.UseMiddleware<RequestLoggingMiddleware>();
 
             // Rate Limiting
             app.UseIpRateLimiting();
