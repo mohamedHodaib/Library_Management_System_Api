@@ -1,38 +1,44 @@
-﻿using Serilog.Context;
+﻿using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.API.Middlewares
+namespace ConnectSphere.WebApi.Middleware;
+
+/// <summary>
+/// Middleware to add correlation ID to all logs.
+/// </summary>
+public class CorrelationIdMiddleware
 {
-    public class CorrelationIdMiddleware
+    private readonly RequestDelegate _next;
+    private const string CorrelationIdHeader = "X-Correlation-ID";
+
+    public CorrelationIdMiddleware(RequestDelegate next)
     {
-        private readonly RequestDelegate _next;
-        private const string CorrelationIdHeader = "X-Correlation-ID";
-        private const string CorrelationIdKey = "CorrelationId";
+        _next = next;
+    }
 
-        public CorrelationIdMiddleware(RequestDelegate next)
+    public async Task InvokeAsync(HttpContext context)
+    {
+        // Get or generate correlation ID
+        var correlationId = context.Request.Headers[CorrelationIdHeader].FirstOrDefault()
+            ?? Guid.NewGuid().ToString();
+
+        // Add to response headers
+        context.Response.Headers[CorrelationIdHeader] = correlationId;
+
+        // Add to HttpContext for easy access
+        context.Items["CorrelationId"] = correlationId;
+
+        // Add to logging scope (available to all logs in this request)
+        using (var scope = context.RequestServices
+            .GetRequiredService<ILogger<CorrelationIdMiddleware>>()
+            .BeginScope(new Dictionary<string, object>
+            {
+                ["CorrelationId"] = correlationId,
+                ["RequestPath"] = context.Request.Path,
+                ["RequestMethod"] = context.Request.Method
+            }))
         {
-            _next = next;
-        }
-
-        public async Task Invoke(HttpContext context)
-        {
-            //Try to get correlation Id if it exist in the request header
-            if(!context.Request.Headers.TryGetValue(CorrelationIdHeader, out var correlationId))
-            {
-                correlationId = Guid.NewGuid().ToString();  
-            }
-
-            if(!context.Response.Headers.ContainsKey(CorrelationIdHeader))
-            {
-                //Add it to the response headers
-                context.Response.Headers.Add(CorrelationIdHeader, correlationId);
-            }
-            
-            // This makes 'CorrelationId' available to ALL subsequent logs in this request.
-            using(LogContext.PushProperty(CorrelationIdKey, correlationId))
-            {
-                await _next(context);
-            }
-
+            await _next(context);
         }
     }
 }
