@@ -3,6 +3,8 @@ using AspNetCoreRateLimit;
 using LibraryBookManagementSystem.API.Middlewares;
 using LibraryManagementSystem.API.Extensions;
 using LibraryManagementSystem.API.Extentions;
+using LibraryManagementSystem.API.Middlewares;
+
 //For Applying [ApiController] to all controllers in the assembly
 using Microsoft.AspNetCore.Mvc;
 [assembly: ApiController]
@@ -29,19 +31,22 @@ namespace LibraryManagementSystem.API
             // --- Configure the HTTP request pipeline ---
             // ORDER MATTERS! The middleware pipeline executes in the order registered
 
-            // 1. Exception handling should be first to catch all exceptions
+            //Register Correlation Id Middlware which use for logging with Id for each request
+            app.UseMiddleware<CorrelationIdMiddleware>();
+
+            // Exception handling should be first to catch all exceptions
             app.UseExceptionHandler(); // This will use ProblemDetails
 
-            // 2. HSTS for production
+            // HSTS for production
             if (!app.Environment.IsDevelopment())
             {
                 app.UseHsts();
             }
 
-            // 3. HTTPS redirection
+            // HTTPS redirection
             app.UseHttpsRedirection();
 
-            // 4. Status Code Pages - Important for handling non-success status codes
+            // Status Code Pages - Important for handling non-success status codes
             // For APIs, we want to return problem details for error status codes
             app.UseStatusCodePages(async statusCodeContext =>
             {
@@ -72,7 +77,7 @@ namespace LibraryManagementSystem.API
                 }
             });
 
-            // 5. Swagger (Development only)
+            // Swagger (Development only)
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -83,24 +88,24 @@ namespace LibraryManagementSystem.API
 
             app.UseRouting();
 
-            // 6. Request logging middleware (before auth to log all requests)
+            // Request logging middleware (before auth to log all requests)
             app.UseMiddleware<RequestLoggingHandler>();
 
-            //7.Rate Limiting
+            // Rate Limiting
             app.UseIpRateLimiting();
 
-            // 8. CORS
+            // CORS
             app.UseCors("CorsPolicy");
 
-            // 8. Response caching
+            // Response caching
             app.UseResponseCaching();
             app.UseHttpCacheHeaders();
 
-            // 9. Authentication & Authorization (must be in this order)
+            // Authentication & Authorization (must be in this order)
             app.UseAuthentication();
             app.UseAuthorization();
 
-            // 10. Map controllers
+            // Map controllers
             app.MapControllers();
 
             // Seed the database after middleware configuration

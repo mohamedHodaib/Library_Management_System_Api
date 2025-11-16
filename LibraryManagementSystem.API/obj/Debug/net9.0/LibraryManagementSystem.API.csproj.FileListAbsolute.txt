@@ -211,3 +211,4 @@ F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\bin\Debug\net9.0\A
 F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\bin\Debug\net9.0\Asp.Versioning.Http.dll
 F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\bin\Debug\net9.0\Asp.Versioning.Mvc.dll
 F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\bin\Debug\net9.0\AspNetCoreRateLimit.dll
+F:\RestfulApiCourse\LibrarySystem\LibraryManagementSystem.API\bin\Debug\net9.0\Serilog.Sinks.Async.dll

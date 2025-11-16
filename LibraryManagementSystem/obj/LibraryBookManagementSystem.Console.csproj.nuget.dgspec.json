@@ -73,6 +73,10 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[9.0.7, )"
+            },
+            "Serilog.Sinks.Async": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             }
           },
           "imports": [
