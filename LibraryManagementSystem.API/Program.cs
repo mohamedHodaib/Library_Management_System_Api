@@ -1,9 +1,9 @@
 using API.Extensions; // Import the extensions namespace
 using AspNetCoreRateLimit;
+using ConnectSphere.WebApi.Middleware;
 using LibraryBookManagementSystem.API.Middlewares;
 using LibraryManagementSystem.API.Extensions;
 using LibraryManagementSystem.API.Extentions;
-using LibraryManagementSystem.API.Middlewares;
 
 //For Applying [ApiController] to all controllers in the assembly
 using Microsoft.AspNetCore.Mvc;

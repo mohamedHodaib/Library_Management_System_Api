@@ -3,19 +3,40 @@
   "WorkspaceRootPath": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\middlewares\\requestloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\extentions\\loggingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\extentions\\seedingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\extentions\\databaseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\middlewares\\correlationidmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA3FAF0-280B-480D-B237-A86CEF59A9EE}|..\\LibraryManagementSystem.DataAccess\\LibraryManagementSystem.DataAccess.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.dataaccess\\data\\config\\authorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{505C8961-D029-42EF-A8E4-1A53AE74589D}|..\\LibraryManagementSystem.Business\\LibraryManagementSystem.Business.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.business\\contract\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{505C8961-D029-42EF-A8E4-1A53AE74589D}|..\\LibraryManagementSystem.Business\\LibraryManagementSystem.Business.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.business\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\extentions\\loggingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{505C8961-D029-42EF-A8E4-1A53AE74589D}|..\\LibraryManagementSystem.Business\\LibraryManagementSystem.Business.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.business\\contract\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA3FAF0-280B-480D-B237-A86CEF59A9EE}|..\\LibraryManagementSystem.DataAccess\\LibraryManagementSystem.DataAccess.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.dataaccess\\data\\config\\authorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -43,9 +64,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA3FAF0-280B-480D-B237-A86CEF59A9EE}|..\\LibraryManagementSystem.DataAccess\\LibraryManagementSystem.DataAccess.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.dataaccess\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA3FAF0-280B-480D-B237-A86CEF59A9EE}|..\\LibraryManagementSystem.DataAccess\\LibraryManagementSystem.DataAccess.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.dataaccess\\entities\\people\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -135,12 +153,6 @@
       "AbsoluteMoniker": "D:0:0:{9FA3FAF0-280B-480D-B237-A86CEF59A9EE}|..\\LibraryManagementSystem.DataAccess\\LibraryManagementSystem.DataAccess.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.dataaccess\\contract\\iborrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\middlewares\\correlationidmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\middlewares\\requestlogginghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\extentions\\identityandauthextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -150,13 +162,7 @@
       "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\extentions\\apiservicesextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\extentions\\applicationservicesextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\extentions\\databaseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA3FAF0-280B-480D-B237-A86CEF59A9EE}|..\\LibraryManagementSystem.DataAccess\\LibraryManagementSystem.DataAccess.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.dataaccess\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -237,9 +243,6 @@
       "AbsoluteMoniker": "D:0:0:{9FA3FAF0-280B-480D-B237-A86CEF59A9EE}|..\\LibraryManagementSystem.DataAccess\\LibraryManagementSystem.DataAccess.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.dataaccess\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE7CA612-4A8B-2B61-E256-65FE8A3B3F00}|..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.api\\extentions\\seedingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{505C8961-D029-42EF-A8E4-1A53AE74589D}|..\\LibraryManagementSystem.Business\\LibraryManagementSystem.Business.csproj|f:\\restfulapicourse\\librarysystem\\librarymanagementsystem.business\\librarymanagementsystem.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -310,78 +313,158 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthorConfiguration.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\Config\\AuthorConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Data\\Config\\AuthorConfiguration.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\Config\\AuthorConfiguration.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.DataAccess\\Data\\Config\\AuthorConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T18:32:04.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Contract\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Contract\\IAuthenticationService.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Contract\\IAuthenticationService.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.Business\\Contract\\IAuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:41:11.471Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoggingExtensions.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\LoggingExtensions.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Extentions\\LoggingExtensions.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\LoggingExtensions.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Extentions\\LoggingExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T05:20:12.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\appsettings.json",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.json",
+              "RelativeToolTip": "..\\LibraryManagementSystem.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-02T08:23:34.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CorrelationIdMiddleware.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Middlewares\\CorrelationIdMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Middlewares\\CorrelationIdMiddleware.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Middlewares\\CorrelationIdMiddleware.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Middlewares\\CorrelationIdMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T12:55:12.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseExtensions.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\DatabaseExtensions.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Extentions\\DatabaseExtensions.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\DatabaseExtensions.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Extentions\\DatabaseExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T05:20:09.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeedingExtensions.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\SeedingExtensions.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Extentions\\SeedingExtensions.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\SeedingExtensions.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Extentions\\SeedingExtensions.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T05:20:13.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RequestLoggingMiddleware.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Middlewares\\RequestLoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Middlewares\\RequestLoggingMiddleware.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Middlewares\\RequestLoggingMiddleware.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Middlewares\\RequestLoggingMiddleware.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowBYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T13:08:53.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\appsettings.Development.json",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.Development.json",
+              "RelativeToolTip": "..\\LibraryManagementSystem.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-09T09:22:39.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\appsettings.Production.json",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.Production.json",
+              "RelativeToolTip": "..\\LibraryManagementSystem.API\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-16T12:18:34.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Controllers\\AuthenticationController.cs",
               "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "..\\LibraryManagementSystem.API\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAqwEoAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T05:42:19.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Controllers\\UsersController.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAASwCYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T12:35:16.44Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "UserDtos.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\UserDtos\\UserDtos.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Dtos\\UserDtos\\UserDtos.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\UserDtos\\UserDtos.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.Business\\Dtos\\UserDtos\\UserDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Services\\AuthenticationService.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.Business\\Services\\AuthenticationService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGYAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T12:37:42.794Z"
+              "WhenOpened": "2025-09-24T07:01:54.752Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Contract\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Contract\\IAuthenticationService.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Contract\\IAuthenticationService.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.Business\\Contract\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T11:41:11.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "BookService.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\BookService.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Services\\BookService.cs",
@@ -393,20 +476,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Services\\AuthenticationService.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\AuthenticationService.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.Business\\Services\\AuthenticationService.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwDMAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "UserDtos.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\UserDtos\\UserDtos.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Dtos\\UserDtos\\UserDtos.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\UserDtos\\UserDtos.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.Business\\Dtos\\UserDtos\\UserDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T07:01:54.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T12:37:42.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Controllers\\UsersController.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAASwCYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:35:16.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthorConfiguration.cs",
+              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\Config\\AuthorConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Data\\Config\\AuthorConfiguration.cs",
+              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\Config\\AuthorConfiguration.cs",
+              "RelativeToolTip": "..\\LibraryManagementSystem.DataAccess\\Data\\Config\\AuthorConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T18:32:04.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Program.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Program.cs",
@@ -419,20 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoggingExtensions.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\LoggingExtensions.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Extentions\\LoggingExtensions.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\LoggingExtensions.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Extentions\\LoggingExtensions.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAlwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T05:20:12.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "AccountDtos.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\AccountDtos\\AccountDtos.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Dtos\\AccountDtos\\AccountDtos.cs",
@@ -440,12 +533,11 @@
               "RelativeToolTip": "..\\LibraryManagementSystem.Business\\Dtos\\AccountDtos\\AccountDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T12:40:33.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T12:40:33.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "AuthorDtos.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\AuthorDtos\\AuthorDtos.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Dtos\\AuthorDtos\\AuthorDtos.cs",
@@ -453,12 +545,11 @@
               "RelativeToolTip": "..\\LibraryManagementSystem.Business\\Dtos\\AuthorDtos\\AuthorDtos.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T06:11:25.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T06:11:25.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\DELL\\AppData\\Roaming\\Microsoft\\UserSecrets\\99c77855-9703-4e91-81c5-9fc3a099b94e\\secrets.json",
               "ToolTip": "C:\\Users\\DELL\\AppData\\Roaming\\Microsoft\\UserSecrets\\99c77855-9703-4e91-81c5-9fc3a099b94e\\secrets.json",
@@ -468,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "LibraryManagementSystem.DataAccess.csproj",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\LibraryManagementSystem.DataAccess.csproj",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\LibraryManagementSystem.DataAccess.csproj",
@@ -480,19 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\appsettings.json",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.json",
-              "RelativeToolTip": "..\\LibraryManagementSystem.API\\appsettings.json",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-02T08:23:34.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "AppDbContextFactory.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\AppDbContextFactory.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Data\\AppDbContextFactory.cs",
@@ -504,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "User.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Entities\\People\\User.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Entities\\People\\User.cs",
@@ -516,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "BookConfiguration.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\Config\\BookConfiguration.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Data\\Config\\BookConfiguration.cs",
@@ -528,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "BorrowerConfiguration.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\Config\\BorrowerConfiguration.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Data\\Config\\BorrowerConfiguration.cs",
@@ -540,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "PersonConfiguration.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\Config\\PersonConfiguration.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Data\\Config\\PersonConfiguration.cs",
@@ -552,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\Config\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Data\\Config\\UserConfiguration.cs",
@@ -564,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "Borrower.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Entities\\People\\Borrower.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Entities\\People\\Borrower.cs",
@@ -576,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Data\\AppDbContext.cs",
@@ -588,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "Author.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Entities\\People\\Author.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Entities\\People\\Author.cs",
@@ -600,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "PersonName.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Entities\\People\\PersonName.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Entities\\People\\PersonName.cs",
@@ -612,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "Person.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Entities\\People\\Person.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Entities\\People\\Person.cs",
@@ -624,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "20251002073901_Final.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Migrations\\20251002073901_Final.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Migrations\\20251002073901_Final.cs",
@@ -636,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "BorrowingConfiguration.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Data\\Config\\BorrowingConfiguration.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Data\\Config\\BorrowingConfiguration.cs",
@@ -648,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "PaginationParameters.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Shared\\PaginationParameters.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Shared\\PaginationParameters.cs",
@@ -660,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "IAuthorRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Contract\\IAuthorRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Contract\\IAuthorRepository.cs",
@@ -672,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\UnitOfWork\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\UnitOfWork\\UnitOfWork.cs",
@@ -684,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "BooksController.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Controllers\\BooksController.cs",
@@ -696,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "AuthorsController.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\AuthorsController.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Controllers\\AuthorsController.cs",
@@ -708,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "BadRequestExceptionHandler.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\ExceptionHandlers\\BadRequestExceptionHandler.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\ExceptionHandlers\\BadRequestExceptionHandler.cs",
@@ -720,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "IPersonRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Contract\\IPersonRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Contract\\IPersonRepository.cs",
@@ -732,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Contract\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Contract\\IRepositoryBase.cs",
@@ -744,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Contract\\IBookRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Contract\\IBookRepository.cs",
@@ -756,7 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Contract\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Contract\\IUnitOfWork.cs",
@@ -768,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "ISoftDeletable.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Contract\\ISoftDeletable.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Contract\\ISoftDeletable.cs",
@@ -780,7 +859,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "BusinessExceptions.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Exceptions\\BusinessExceptions.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Exceptions\\BusinessExceptions.cs",
@@ -792,7 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "RepositoryBase.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Repositories\\RepositoryBase.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Repositories\\RepositoryBase.cs",
@@ -804,7 +883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "PersonRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Repositories\\PersonRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Repositories\\PersonRepository.cs",
@@ -816,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "IBorrowerRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Contract\\IBorrowerRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Contract\\IBorrowerRepository.cs",
@@ -828,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "BorrowingRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Repositories\\BorrowingRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Repositories\\BorrowingRepository.cs",
@@ -840,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "IBorrowingRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Contract\\IBorrowingRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Contract\\IBorrowingRepository.cs",
@@ -852,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "IdentityAndAuthExtensions.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\IdentityAndAuthExtensions.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Extentions\\IdentityAndAuthExtensions.cs",
@@ -864,7 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "log-20250930.txt",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Logs\\log-20250930.txt",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Logs\\log-20250930.txt",
@@ -876,31 +955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "CorrelationIdMiddleware.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Middlewares\\CorrelationIdMiddleware.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Middlewares\\CorrelationIdMiddleware.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Middlewares\\CorrelationIdMiddleware.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Middlewares\\CorrelationIdMiddleware.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBoAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T12:55:12.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "RequestLoggingHandler.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Middlewares\\RequestLoggingHandler.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Middlewares\\RequestLoggingHandler.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Middlewares\\RequestLoggingHandler.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Middlewares\\RequestLoggingHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T13:08:53.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "ApiServicesExtentions.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\ApiServicesExtentions.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Extentions\\ApiServicesExtentions.cs",
@@ -912,31 +967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\appsettings.Development.json",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\appsettings.Development.json",
-              "RelativeToolTip": "..\\LibraryManagementSystem.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-09T09:22:39.302Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "DatabaseExtensions.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\DatabaseExtensions.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Extentions\\DatabaseExtensions.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\DatabaseExtensions.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Extentions\\DatabaseExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T05:20:09.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "ApplicationServicesExtentions.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\ApplicationServicesExtentions.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Extentions\\ApplicationServicesExtentions.cs",
@@ -948,7 +979,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Repositories\\BookRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Repositories\\BookRepository.cs",
@@ -960,7 +991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "PersonsController.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\PersonsController.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Controllers\\PersonsController.cs",
@@ -972,7 +1003,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "BorrowersController.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Controllers\\BorrowersController.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Controllers\\BorrowersController.cs",
@@ -984,7 +1015,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "DefaultExceptionHandler.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\ExceptionHandlers\\DefaultExceptionHandler.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\ExceptionHandlers\\DefaultExceptionHandler.cs",
@@ -996,7 +1027,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "launchSettings.json",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Properties\\launchSettings.json",
@@ -1008,7 +1039,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "BorrowerService.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\BorrowerService.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Services\\BorrowerService.cs",
@@ -1020,7 +1051,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "EmailService.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Services\\EmailService.cs",
@@ -1032,7 +1063,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "UserService.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Services\\UserService.cs",
@@ -1044,7 +1075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "LibraryManagementSystem.API.xml",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\LibraryManagementSystem.API.xml",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\LibraryManagementSystem.API.xml",
@@ -1056,7 +1087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "HandlePagedDataFilterAttribute.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Filters\\ResultFilters\\HandlePagedDataFilterAttribute.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Filters\\ResultFilters\\HandlePagedDataFilterAttribute.cs",
@@ -1068,7 +1099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "LogPerformanceFilterAttribute.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Filters\\ActionFilters\\LogPerformanceFilterAttribute.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Filters\\ActionFilters\\LogPerformanceFilterAttribute.cs",
@@ -1080,7 +1111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "PersonService.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\PersonService.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Services\\PersonService.cs",
@@ -1092,7 +1123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "ForgotPasswordSettings.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Options\\ForgotPasswordSettings.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Options\\ForgotPasswordSettings.cs",
@@ -1104,7 +1135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "NotFoundExceptionHandler.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\ExceptionHandlers\\NotFoundExceptionHandler.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\ExceptionHandlers\\NotFoundExceptionHandler.cs",
@@ -1116,7 +1147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "ConflictExceptionHandler.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\ExceptionHandlers\\ConflictExceptionHandler.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\ExceptionHandlers\\ConflictExceptionHandler.cs",
@@ -1128,7 +1159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "LoanSettings.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Options\\LoanSettings.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Options\\LoanSettings.cs",
@@ -1140,7 +1171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Options\\JwtSettings.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Options\\JwtSettings.cs",
@@ -1152,7 +1183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Options\\EmailSettings.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Options\\EmailSettings.cs",
@@ -1164,7 +1195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "BookDtos.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\BookDtos\\BookDtos.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Dtos\\BookDtos\\BookDtos.cs",
@@ -1176,7 +1207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 73,
               "Title": "BorrowingDtos.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\BorrowingDtos\\BorrowingDtos.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Dtos\\BorrowingDtos\\BorrowingDtos.cs",
@@ -1188,7 +1219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 74,
               "Title": "BorrowerDtos.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\BorrowerDtos\\BorrowerDtos.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Dtos\\BorrowerDtos\\BorrowerDtos.cs",
@@ -1200,7 +1231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 75,
               "Title": "Shared.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\Shared\\Shared.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Dtos\\Shared\\Shared.cs",
@@ -1212,7 +1243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 77,
               "Title": "ListElementsRangeAttribute.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Validations\\ListElementsRangeAttribute.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Validations\\ListElementsRangeAttribute.cs",
@@ -1224,7 +1255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 76,
               "Title": "PersonDtos.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Dtos\\PersonDtos\\PersonDtos.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Dtos\\PersonDtos\\PersonDtos.cs",
@@ -1236,7 +1267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 78,
               "Title": "AuthorService.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Services\\AuthorService.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Services\\AuthorService.cs",
@@ -1248,7 +1279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 79,
               "Title": "AuthorRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Repositories\\AuthorRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Repositories\\AuthorRepository.cs",
@@ -1260,19 +1291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "SeedingExtensions.cs",
-              "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\SeedingExtensions.cs",
-              "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Extentions\\SeedingExtensions.cs",
-              "ToolTip": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Extentions\\SeedingExtensions.cs",
-              "RelativeToolTip": "..\\LibraryManagementSystem.API\\Extentions\\SeedingExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T05:20:13.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 80,
               "Title": "LibraryManagementSystem.Business.csproj",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\LibraryManagementSystem.Business.csproj",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\LibraryManagementSystem.Business.csproj",
@@ -1284,7 +1303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "Constants.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\Constants\\Constants.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\Constants\\Constants.cs",
@@ -1296,7 +1315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\DELL\\AppData\\Roaming\\Microsoft\\UserSecrets\\17365784-06e8-42a5-9a2e-069db85182fe\\secrets.json",
               "ToolTip": "C:\\Users\\DELL\\AppData\\Roaming\\Microsoft\\UserSecrets\\17365784-06e8-42a5-9a2e-069db85182fe\\secrets.json",
@@ -1306,7 +1325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\DELL\\AppData\\Roaming\\Microsoft\\UserSecrets\\c82952a1-b1e9-4810-9d3d-91ef6e30d7d6\\secrets.json",
               "ToolTip": "C:\\Users\\DELL\\AppData\\Roaming\\Microsoft\\UserSecrets\\c82952a1-b1e9-4810-9d3d-91ef6e30d7d6\\secrets.json",
@@ -1316,7 +1335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 84,
               "Title": "20251002072237_Final.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Migrations\\20251002072237_Final.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Migrations\\20251002072237_Final.cs",
@@ -1327,7 +1346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "LibraryBookManagementSystemAPI.http",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\LibraryBookManagementSystemAPI.http",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\LibraryBookManagementSystemAPI.http",
@@ -1339,7 +1358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 86,
               "Title": "UnauthorizedExceptionHandler.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.API\\ExceptionHandlers\\UnauthorizedExceptionHandler.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.API\\ExceptionHandlers\\UnauthorizedExceptionHandler.cs",
@@ -1351,7 +1370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 88,
               "Title": "PersonMappingProfile.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Mappings\\PersonMappingProfile.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Mappings\\PersonMappingProfile.cs",
@@ -1363,7 +1382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": "IUserService.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Contract\\IUserService.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Contract\\IUserService.cs",
@@ -1375,7 +1394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 89,
               "Title": "BorrowerRepository.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Repositories\\BorrowerRepository.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Repositories\\BorrowerRepository.cs",
@@ -1387,7 +1406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 90,
               "Title": "BorrowerMappingProfile.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Mappings\\BorrowerMappingProfile.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Mappings\\BorrowerMappingProfile.cs",
@@ -1399,7 +1418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 91,
               "Title": "PagedList.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Shared\\PagedList.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Shared\\PagedList.cs",
@@ -1411,7 +1430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 92,
               "Title": "IBorrowerService.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Contract\\IBorrowerService.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Contract\\IBorrowerService.cs",
@@ -1423,7 +1442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 93,
               "Title": "BorrowerExtensions.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Extensions\\BorrowerExtensions.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Extensions\\BorrowerExtensions.cs",
@@ -1435,7 +1454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 94,
               "Title": "AuthorMappingProfile.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Mappings\\AuthorMappingProfile.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Mappings\\AuthorMappingProfile.cs",
@@ -1447,7 +1466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 95,
               "Title": "AuthorExtensions.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Extensions\\AuthorExtensions.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Extensions\\AuthorExtensions.cs",
@@ -1459,7 +1478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 96,
               "Title": "BookExtensions.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Extensions\\BookExtensions.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Extensions\\BookExtensions.cs",
@@ -1471,7 +1490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 97,
               "Title": "BookMappingProfile.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Mappings\\BookMappingProfile.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Mappings\\BookMappingProfile.cs",
@@ -1483,7 +1502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 98,
               "Title": "PersonExtensions.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.DataAccess\\Extensions\\PersonExtensions.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.DataAccess\\Extensions\\PersonExtensions.cs",
@@ -1495,7 +1514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 99,
               "Title": "IBookService.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Contract\\IBookService.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Contract\\IBookService.cs",
@@ -1507,7 +1526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 100,
               "Title": "UserMappingProfile.cs",
               "DocumentMoniker": "F:\\RestfulApiCourse\\LibrarySystem\\LibraryManagementSystem.Business\\Mappings\\UserMappingProfile.cs",
               "RelativeDocumentMoniker": "..\\LibraryManagementSystem.Business\\Mappings\\UserMappingProfile.cs",
