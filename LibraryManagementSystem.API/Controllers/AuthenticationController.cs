@@ -26,12 +26,12 @@ namespace LibraryManagementSystem.API.Controllers
         /// Registers a new user in the system.
         /// </summary>
         /// <param name="registerDto">The data required to register a new user.</param>
-        /// <returns>A 201 Created status code if registration is successful.</returns>
-        /// <response code="201">Indicates the user was created successfully.</response>
+        /// <returns>A 200 Created status code if registration is successful.</returns>
+        /// <response code="200">Indicates the user was created successfully.</response>
         /// <response code="400">If the registration data is invalid (e.g., password does not meet requirements).</response>
         /// <response code="409">If The email is already used</response>
         [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
@@ -48,8 +48,7 @@ namespace LibraryManagementSystem.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            return CreatedAtAction(nameof(UsersController.GetById),
-                                    "Users" , new { id = userProfileDto!.Id }, userProfileDto);
+            return Ok(userProfileDto);
         }
 
         /// <summary>
